@@ -25,6 +25,115 @@
 
 </head>
 
+<style>
+
+	.block-expand-categories h1,
+	.block-expand-categories h2,
+	.block-expand-categories h3 { font-family: Playfair Display, serif !important; }
+
+	.block-expand-categories .expand-category {
+		--height: 50vh;
+		--responsive-height: 60px;
+		--hover-flex: 10;
+
+		position: relative;
+		background-position: center center;
+		background-size: cover;
+		border-radius: 20px;
+		margin: 10px 0;
+		min-height: var(--responsive-height);
+		cursor: pointer;
+	}
+
+	.block-expand-categories .expand-category h4 {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		right: 0;
+		text-align: center;
+		margin: 0;
+		transform: translateY(-50%);
+	}
+
+	/* Larger Device */
+	@media (min-width: 992px) {
+
+		.block-expand-categories .expand-category {
+			height: var(--height);
+			flex: 1;
+			margin: 0 10px;
+			transition: flex 1s ease;
+			-webkit-backface-visibility: hidden;
+			transform: translate3d(0,0,0);
+		}
+
+		.block-expand-categories:not(.on-click) .expand-category:hover,
+		.block-expand-categories.on-click .expand-category.active { flex: var(--hover-flex); }
+
+		.block-expand-categories .expand-category h4 {
+			opacity: 1;
+			top: auto;
+			bottom: 10px;
+			transform: none;
+			transition: opacity .4s ease;
+		}
+
+		.block-expand-categories:hover .expand-category:not(.active):not(:hover) h4,
+		.block-expand-categories.on-click .expand-category:not(.active) h4 { opacity: 0; }
+
+	}
+
+	.d-grid {
+			--column: 1;
+			display: grid;
+		    grid-template-columns: repeat(var(--column), 1fr);
+		    grid-gap: 30px;
+		}
+
+		@media (min-width: 991px) {
+			.d-grid {
+			   --column: 3;
+			}
+			.d-grid .grid-w {
+			   grid-row: span 2 / auto;
+			}
+		}
+
+		.feature-box-border-vertical .feature-box { position: relative; }
+
+		.feature-box-border-vertical .feature-box:not(.noborder)::before,
+		.feature-box-border-vertical.border-hover-animate .feature-box:not(.noborder)::after {
+			content: "";
+			position: absolute;
+			top: calc(64px + 13px);
+			left: 59px;
+			width: 2px;
+			height: calc(100% - 90px);
+			background-color: #EEE;
+			z-index: 0;
+		}
+
+		.feature-box-border-vertical.border-hover-animate .feature-box:not(.noborder)::after {
+			background-color: #0F6458;
+			height: 0;
+			transition: height .3s ease-in-out;
+		}
+
+		.feature-box-border-vertical .feature-box:nth-child(1):not(.noborder)::before { background-color: #0F6458; }
+
+		.feature-box-border-vertical.border-hover-animate .feature-box:hover:not(.noborder)::after { height: calc(100% - 90px); }
+
+		.feature-box-border-vertical .fbox-icon i,
+		.feature-box-border-vertical .fbox-border.fbox-light .fbox-icon i {
+			line-height: 60px;
+			font-size: 24px;
+			z-index: 1;
+			text-align: center;
+		}
+
+</style>
+
+
 <body class="stretched">
 
 	<!-- Document Wrapper
@@ -195,7 +304,7 @@
 
 				<div class="row align-items-stretch">
 
-					<div class="col-md-4 center">
+					<div class="col-md-4 center" style="padding-left: 20px;">
 						<img data-animate="fadeInLeft" src="images/team/team-01.jpg" alt="Iphone">
 					</div>
 
@@ -448,6 +557,172 @@
 					</div>
 
 				</div>
+				
+				<div id="wrapper" class="clearfix">
+					<!-- Content
+					============================================= -->
+					<section id="content">
+						<div class="content-wrap">
+							<div class="container clearfix">
+								<div class="d-grid col-mb-50">
+			
+									<div class="grid-col shadow-sm grid-w bg-light p-5">
+										<div class="feature-box fbox-sm fbox-plain flex-column">
+											<div class="fbox-icon mb-4">
+												<a href="#"><i class="text-primary icon-line-monitor"></i></a>
+											</div>
+											<div class="fbox-content px-0 mb-4">
+												<h3>i-construction支援 3DCAD・BIM・CIM</h3>
+												<p>建設業の生産性を向上のため、起工測量、3次元テータ作成、ICT建機による施工、3次元出来形管理、3次元データ納品、CIM、空中写真撮影・動画作成のサービスを提供し、i-constuctionで現場を支援します。</p>
+											</div>
+											<!-- <ul class="list-unstyled iconlist mb-0">
+												<li class="mb-2 fw-semibold"><i class="icon-line-circle-check text-primary"></i> 61000+ Happy Customers</li>
+												<li class="mb-2 fw-semibold"><i class="icon-line-circle-check text-primary"></i> 1200+ Awesome Example Templates</li>
+												<li class="mb-2 fw-semibold"><i class="icon-line-circle-check text-primary"></i> 50+ Beautiful Niche Demos</li>
+												<li class="mb-2 fw-semibold"><i class="icon-line-circle-check text-primary"></i> 65+ One-Page Demos</li>
+												<li class="mb-2 fw-semibold"><i class="icon-line-circle-check text-primary"></i> 140+ Revolution Slider Layouts</li>
+												<li class="mb-2 fw-semibold"><i class="icon-line-circle-check text-primary"></i> 1500+ UI Features & Shortcodes</li>
+												<li class="mb-2 fw-semibold"><i class="icon-line-circle-check text-primary"></i> Infinite Header Styles</li>
+												<li class="mb-2 fw-semibold"><i class="icon-line-circle-check text-primary"></i> 100% Responsive & Customizable</li>
+											</ul> -->
+										</div>
+									</div>
+			
+									<div class="grid-col shadow-sm bg-light rounded p-5">
+										<div class="feature-box flex-column fbox-sm fbox-plain">
+											<div class="fbox-icon mb-4">
+												<a href="#"><i class="text-primary icon-line-eye"></i></a>
+											</div>
+											<div class="fbox-content px-0">
+												<h3>一般土木・建築工事請負事業</h3>
+												<p>若手人材でお客様の建設現場を応援します。コンクリート基礎、型枠、鉄筋、小規模土木工事を請け負います。</p>
+											</div>
+										</div>
+									</div>
+			
+									<div class="grid-col shadow-sm bg-light rounded p-5">
+										<div class="feature-box flex-column fbox-sm fbox-plain">
+											<div class="fbox-icon mb-4">
+												<a href="#"><i class="text-primary icon-line-star"></i></a>
+											</div>
+											<div class="fbox-content px-0">
+												<h3>再生可能エネルギー事業</h3>
+												<p>太陽光発電所設計・施工・メンテナンスを一式請け負います。今までの経験と実績を活かし、高い品質の発電所を短期間で施工することでお客様のニーズにお応えします。</p>
+											</div>
+										</div>
+									</div>
+			
+									<div class="grid-col shadow-sm bg-light rounded p-5">
+										<div class="feature-box flex-column fbox-sm fbox-plain">
+											<div class="fbox-icon mb-4">
+												<a href="#"><i class="text-primary icon-line-play"></i></a>
+											</div>
+											<div class="fbox-content px-0">
+												<h3>特定技能者支援業務</h3>
+												<p>初めて来日する人でも安心して仕事を続けられるように支援し、お客様の雇用の維持・拡大を努めます。優秀なモンゴル人材を紹介し、就労ビザ取得支援をおこないます。</p>
+											</div>
+										</div>
+									</div>
+			
+									<div class="grid-col shadow-sm bg-light rounded p-5">
+										<div class="feature-box flex-column fbox-sm fbox-plain">
+											<div class="fbox-icon mb-4">
+												<a href="#"><i class="text-primary icon-params"></i></a>
+											</div>
+											<div class="fbox-content px-0">
+												<h3>貿易（販売及び輸出入）</h3>
+												<p>フェイスガードを製造、販売した経験に基づき、将来衣料品、日用雑貨、食料品の販売及び輸出入に向けて調査中です。</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section><!-- #content end -->
+			
+			
+				</div><!-- #wrapper end -->
+				
+					<!-- Document Wrapper
+				============================================= -->
+				<div id="wrapper" class="clearfix">
+
+					<!-- Content
+					============================================= -->
+					<section id="content">
+						<div class="content-wrap">
+							<div class="container">
+								<div style="text-align: center;">
+									<h2>SDGsへの取り組み</h2>
+								</div>
+								<div class="row feature-box-border-vertical border-hover-animate col-mb-50 justify-content-center align-items-center my-5">
+									<div class="col-md-6 feature-box fbox-dark">
+										<div class="fbox-icon bg-white">
+											<a href="#"><i>1</i></a>
+										</div>
+										<div class="fbox-content">
+											<h3 class="nott text-larger mb-2">SDGsとは</h3>
+											<p>SDGsとは、２０１５年９月の国連サミットで採択された「持続可能な開発のための２０３０アジェンダ」に記載された２０１６年から２０３０年までの国際目標です。貧困や格差、気候変動などの世界の問題に人類全体が一丸となって取り組み、２０３０年までに解決を目指すものです。</p>
+											<a href="#" class="button button-small button-dark button-rounded border-width-1 ms-0 mt-3">Get Started <i class="icon-angle-right me-0"></i></a>
+										</div>
+									</div>
+
+									<div class="clear"></div>
+
+									<div class="col-md-6 feature-box fbox-border fbox-light fbox-effect">
+										<div class="fbox-icon bg-white">
+											<a href="#"><i>2</i></a>
+										</div>
+										<div class="fbox-content">
+											<h3 class="nott text-larger mb-2">UNILEADの取り組み</h3>
+											<p>SDGsの１７の目標は企業努力で実現できる範囲を超えた目標もあり、当社が貢献しやすい分野から着手しています。当社は以下の６目標を重点として、活動を開始しています。UNILEADは社員にストレスをかけないため、ノルマや期限を重視していませんが、掲げた目標は時間がかかっても必ず達成しています。</p>
+										</div>
+									</div>
+
+									<div class="clear"></div>
+
+									<div class="col-md-6 feature-box fbox-border fbox-light fbox-effect">
+										<div class="fbox-icon bg-white">
+											<a href="#"><i>3</i></a>
+										</div>
+										<div class="fbox-content">
+											<h3 class="nott text-larger mb-2">環境への取り組み</h3>
+											<p>弊社の施工した太陽光発電所31ヵ所は、年間/月間〇〇kWhの電気を発電している。これは、〇〇トン/kgのCO₂の排出を削減した。</p>
+										</div>
+									</div>
+
+									<div class="clear"></div>
+
+									<div class="col-md-6 feature-box fbox-border fbox-light fbox-effect">
+										<div class="fbox-icon bg-white">
+											<a href="#"><i>4</i></a>
+										</div>
+										<div class="fbox-content">
+											<h3 class="nott text-larger mb-2">社会への取り組み</h3>
+											<p>新型コロナウィルスの感染拡大防止に少しでも役に立てればと思い、近隣の小中高等学校に弊社が製造しているフェイスシールドを寄付させていただきました。一人ひとりの感染拡大防止に努力することはもちろん、弊社としても地域の一員としてできることで応援していきたいです。</p>
+										</div>
+									</div>
+
+									<div class="clear"></div>
+
+									<div class="col-md-6 feature-box fbox-border fbox-light fbox-effect noborder">
+										<div class="fbox-icon bg-white">
+											<a href="#"><i>5</i></a>
+										</div>
+										<div class="fbox-content">
+											<h3 class="nott text-larger mb-2">24/7 Support</h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, quae rerum dolores aperiam amet enim consequuntur maiores totam odit molestiae vel ut earum deleniti.</p>
+										</div>
+									</div>
+
+								</div>
+
+							</div>
+						</div>
+					</section><!-- #content end -->
+
+
+				</div><!-- #wrapper end -->
 
 				<div class="section">
 					<div class="container clearfix">
@@ -562,6 +837,57 @@
 
 					</div>
 				</div>
+
+					<!-- Document Wrapper
+					============================================= -->
+				<div id="wrapper" class="clearfix">
+
+					<!-- Content
+					============================================= -->
+					<section id="content">
+						<div class="content-wrap">
+
+							<div class="container">
+
+								<h2 class="text-center">写真</h2>
+								<div class="block-expand-categories flex-column flex-lg-row d-flex justify-content-center">
+									<div class="expand-category bg-light" style="background-image: url('images/blocks/preview/exp-cards/1.jpeg');">
+										<h4><a href="#" class="text-light">フェイスシールド</a></h4>
+									</div>
+
+									<div class="expand-category bg-light" style="background-image: url('images/blocks/preview/exp-cards/2.jpeg');">
+										<h4><a href="#" class="text-light">フェイスシールド</a></h4>
+									</div>
+
+									<div class="expand-category bg-light" style="background-image: url('images/blocks/preview/exp-cards/3.jpeg');">
+										<h4><a href="#" class="text-light">フェイスシールド</a></h4>
+									</div>
+
+									<div class="expand-category bg-light" style="background-image: url('images/blocks/preview/exp-cards/4.jpg');">
+										<h4><a href="#" class="text-light">Desserts</a></h4>
+									</div>
+
+									<div class="expand-category bg-light" style="background-image: url('images/blocks/preview/exp-cards/5.jpg');">
+										<h4><a href="#" class="text-light">Vegan</a></h4>
+									</div>
+
+									<div class="expand-category bg-light" style="background-image: url('images/blocks/preview/exp-cards/6.jpg');">
+										<h4><a href="#" class="text-light">Seafood</a></h4>
+									</div>
+
+									<div class="expand-category bg-light" style="background-image: url('images/blocks/preview/exp-cards/7.jpg');">
+										<h4><a href="#" class="text-light">Beverages</a></h4>
+									</div>
+								</div>
+
+								<div class="line"></div>
+							</div>
+
+						</div>
+					</section><!-- #content end -->
+
+
+				</div><!-- #wrapper end -->
 
 				<div class="container clearfix">
 
