@@ -11884,7 +11884,7 @@ body:not(.device-touch) .clients-grid .grid-item a {
 	background-color: transparent !important;
 	border: 0 !important;
 	box-shadow: none !important;
-	max-width: 800px;
+	max-width: 1000px;
 	margin: 0 auto;
 }
 
