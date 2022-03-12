@@ -5,7 +5,7 @@
 :root {
 	--header-height: 70px;
 	--themecolor: #7E9680;
-	--themecolorrgba: 126, 150, 128;
+	--themecolorrgba: 0, 0, 0;
 }
 
 /* Custom Header Size
@@ -70,7 +70,7 @@
 	width: 100%;
 	height: 100%;
 	background-image: linear-gradient(to right, rgba(126, 150, 128, 1) 30%, rgba(126, 150, 128, 0.5) 100%);
-	background-image: linear-gradient(to right, rgba(var(--themecolorrgba, 126, 150, 128), 1) 30%, rgba(var(--themecolorrgba, 126, 150, 128), 0.5) 100%);
+	background-image: linear-gradient(to right, rgba(var(--themecolorrgba, 126, 150, 128), 0.8) 30%, rgba(var(--themecolorrgba, 126, 150, 128), 0.5) 100%);
 	-webkit-clip-path: none;
 	clip-path: none;
 	background-position: center center;
