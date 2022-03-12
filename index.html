@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en-US">
+
 <head>
 
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -7,7 +8,9 @@
 
 	<!-- Stylesheets
 	============================================= -->
-	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Poppins:300,400,500,600,700|PT+Serif:400,400i&display=swap" rel="stylesheet" type="text/css" />
+	<link
+		href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Poppins:300,400,500,600,700|PT+Serif:400,400i&display=swap"
+		rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
 	<link rel="stylesheet" href="style.css" type="text/css" />
 	<link rel="stylesheet" href="css/swiper.css" type="text/css" />
@@ -26,10 +29,11 @@
 </head>
 
 <style>
-
 	.block-expand-categories h1,
 	.block-expand-categories h2,
-	.block-expand-categories h3 { font-family: Playfair Display, serif !important; }
+	.block-expand-categories h3 {
+		font-family: Playfair Display, serif !important;
+	}
 
 	.block-expand-categories .expand-category {
 		--height: 50vh;
@@ -56,7 +60,7 @@
 	}
 
 	/* Larger Device */
-	@media (min-width: 992px) {
+	@media (min-width: 992px) {ßßß
 
 		.block-expand-categories .expand-category {
 			height: var(--height);
@@ -64,11 +68,13 @@
 			margin: 0 10px;
 			transition: flex 1s ease;
 			-webkit-backface-visibility: hidden;
-			transform: translate3d(0,0,0);
+			transform: translate3d(0, 0, 0);
 		}
 
 		.block-expand-categories:not(.on-click) .expand-category:hover,
-		.block-expand-categories.on-click .expand-category.active { flex: var(--hover-flex); }
+		.block-expand-categories.on-click .expand-category.active {
+			flex: var(--hover-flex);
+		}
 
 		.block-expand-categories .expand-category h4 {
 			opacity: 1;
@@ -79,122 +85,147 @@
 		}
 
 		.block-expand-categories:hover .expand-category:not(.active):not(:hover) h4,
-		.block-expand-categories.on-click .expand-category:not(.active) h4 { opacity: 0; }
+		.block-expand-categories.on-click .expand-category:not(.active) h4 {
+			opacity: 0;
+		}
 
 	}
 
 	.d-grid {
-			--column: 1;
-			display: grid;
-		    grid-template-columns: repeat(var(--column), 1fr);
-		    grid-gap: 30px;
+		--column: 1;
+		display: grid;
+		grid-template-columns: repeat(var(--column), 1fr);
+		grid-gap: 30px;
+	}
+
+	@media (min-width: 991px) {
+		.d-grid {
+			--column: 3;
 		}
 
-		@media (min-width: 991px) {
-			.d-grid {
-			   --column: 3;
-			}
-			.d-grid .grid-w {
-			   grid-row: span 2 / auto;
-			}
+		.d-grid .grid-w {
+			grid-row: span 2 / auto;
 		}
+	}
 
-		.feature-box-border-vertical .feature-box { position: relative; }
+	.feature-box-border-vertical .feature-box {
+		position: relative;
+	}
 
-		.feature-box-border-vertical .feature-box:not(.noborder)::before,
-		.feature-box-border-vertical.border-hover-animate .feature-box:not(.noborder)::after {
-			content: "";
-			position: absolute;
-			top: calc(64px + 13px);
-			left: 59px;
-			width: 2px;
-			height: calc(100% - 90px);
-			background-color: #EEE;
-			z-index: 0;
-		}
+	.feature-box-border-vertical .feature-box:not(.noborder)::before,
+	.feature-box-border-vertical.border-hover-animate .feature-box:not(.noborder)::after {
+		content: "";
+		position: absolute;
+		top: calc(64px + 13px);
+		left: 59px;
+		width: 2px;
+		height: calc(100% - 90px);
+		background-color: #EEE;
+		z-index: 0;
+	}
 
-		.feature-box-border-vertical.border-hover-animate .feature-box:not(.noborder)::after {
-			background-color: #0F6458;
-			height: 0;
-			transition: height .3s ease-in-out;
-		}
+	.feature-box-border-vertical.border-hover-animate .feature-box:not(.noborder)::after {
+		background-color: #0F6458;
+		height: 0;
+		transition: height .3s ease-in-out;
+	}
 
-		.feature-box-border-vertical .feature-box:nth-child(1):not(.noborder)::before { background-color: #0F6458; }
+	.feature-box-border-vertical .feature-box:nth-child(1):not(.noborder)::before {
+		background-color: #0F6458;
+	}
 
-		.feature-box-border-vertical.border-hover-animate .feature-box:hover:not(.noborder)::after { height: calc(100% - 90px); }
+	.feature-box-border-vertical.border-hover-animate .feature-box:hover:not(.noborder)::after {
+		height: calc(100% - 90px);
+	}
 
-		.feature-box-border-vertical .fbox-icon i,
-		.feature-box-border-vertical .fbox-border.fbox-light .fbox-icon i {
-			line-height: 60px;
-			font-size: 24px;
-			z-index: 1;
-			text-align: center;
-		}
+	.feature-box-border-vertical .fbox-icon i,
+	.feature-box-border-vertical .fbox-border.fbox-light .fbox-icon i {
+		line-height: 60px;
+		font-size: 24px;
+		z-index: 1;
+		text-align: center;
+	}
 
-		/*side bar icons*/
-		.si-sticky.si-sidebar {
-			--width: 240px;
-			--height: 54px;
-			--icon-size: var(--height); /* 54px */
-			--text-width: calc(var(--width) - var(--height)); /* 230px - 54px */
-			width: var(--icon-size);
-			height: auto;
-		}
+	/*side bar icons*/
+	.si-sticky.si-sidebar {
+		--width: 240px;
+		--height: 54px;
+		--icon-size: var(--height);
+		/* 54px */
+		--text-width: calc(var(--width) - var(--height));
+		/* 230px - 54px */
+		width: var(--icon-size);
+		height: auto;
+	}
 
-		.si-sticky.si-sidebar:not() { left: 0; }
+	.si-sticky.si-sidebar:not() {
+		left: 0;
+	}
 
-		.si-sticky.si-sidebar .social-icon {
-			margin: 2px 0;
-			margin-left: calc(-1 * var(--text-width));
-			width: var(--width);
-			height: var(--height);
-			border: 0;
-			border-radius: 0 4px 4px 0;
-			display: inline-flex;
-			align-items: center;
-			transition: margin 0.2s ease-in-out;
-		}
+	.si-sticky.si-sidebar .social-icon {
+		margin: 2px 0;
+		margin-left: calc(-1 * var(--text-width));
+		width: var(--width);
+		height: var(--height);
+		border: 0;
+		border-radius: 0 4px 4px 0;
+		display: inline-flex;
+		align-items: center;
+		transition: margin 0.2s ease-in-out;
+	}
 
-		.si-sticky.si-sidebar .social-icon i {
-			position: absolute;
-			left: auto;
-			right: 0;
-			width: var(--icon-size);
-			height: var(--icon-size);
-			line-height: var(--icon-size);
-			text-align: center;
-			transition: all 0.2s ease-in-out;
-		}
+	.si-sticky.si-sidebar .social-icon i {
+		position: absolute;
+		left: auto;
+		right: 0;
+		width: var(--icon-size);
+		height: var(--icon-size);
+		line-height: var(--icon-size);
+		text-align: center;
+		transition: all 0.2s ease-in-out;
+	}
 
-		.si-sticky.si-sidebar .social-icon span {
-			color: #FFF;
-			font-size: 1rem;
-			width: var(--text-width);
-			text-align: center;
-		}
+	.si-sticky.si-sidebar .social-icon span {
+		color: #FFF;
+		font-size: 1rem;
+		width: var(--text-width);
+		text-align: center;
+	}
 
 
-		.si-sticky { right: 0; }
+	.si-sticky {
+		right: 0;
+	}
 
-		.si-sticky.si-sidebar.si-sticky-right .social-icon {
-			-ms-flex-direction: row-reverse;
-			flex-direction: row-reverse;
+	.si-sticky.si-sidebar.si-sticky-right .social-icon {
+		-ms-flex-direction: row-reverse;
+		flex-direction: row-reverse;
+		margin-left: 0;
+		border-radius: 4px 0 0 4px;
+	}
+
+	.si-sticky.si-sidebar.si-sticky-right .social-icon i {
+		left: 0;
+		right: auto;
+	}
+
+	@media (min-width: 992px) {
+		.si-sticky.si-sidebar:not(.si-sticky-right) .social-icon:hover {
 			margin-left: 0;
-			border-radius: 4px 0 0 4px;
 		}
 
-		.si-sticky.si-sidebar.si-sticky-right .social-icon i {
-			left: 0;
-			right: auto;
+		.si-sticky.si-sidebar:not(.si-sticky-right) .social-icon:hover i {
+			right: calc(-1 * var(--text-width));
 		}
 
-		@media (min-width: 992px) {
-			.si-sticky.si-sidebar:not(.si-sticky-right) .social-icon:hover { margin-left: 0; }
-			.si-sticky.si-sidebar:not(.si-sticky-right) .social-icon:hover i { right: calc(-1 * var(--text-width)); }
-
-			.si-sticky.si-sidebar.si-sticky-right .social-icon:hover { margin-left: calc(-1 * var(--text-width)); }
-			.si-sticky.si-sidebar.si-sticky-right .social-icon:hover i { left: calc(-1 * var(--text-width)); }
+		.si-sticky.si-sidebar.si-sticky-right .social-icon:hover {
+			margin-left: calc(-1 * var(--text-width));
 		}
+
+		.si-sticky.si-sidebar.si-sticky-right .social-icon:hover i {
+			left: calc(-1 * var(--text-width));
+		}
+	}
 </style>
 
 
@@ -214,12 +245,23 @@
 						<!-- Logo
 						============================================= -->
 						<div id="logo">
-							<a href="index.html" class="standard-logo"  style="height: 70px;" data-dark-logo="images/uni-logo.png"><img src="images/uni-logo.png" alt="Canvas Logo"></a>
-							<a href="index.html" class="retina-logo" data-dark-logo="images/uni-logo.png"><img src="images/uni-logo.png"  style="padding: 10px;" alt="Canvas Logo"></a>
+							<a href="index.html" class="standard-logo" style="height: 70px;"
+								data-dark-logo="images/uni-logo.png"><img src="images/uni-logo.png"
+									alt="Canvas Logo"></a>
+							<a href="index.html" class="retina-logo" data-dark-logo="images/uni-logo.png"><img
+									src="images/uni-logo.png" style="padding: 10px;" alt="Canvas Logo"></a>
 						</div><!-- #logo end -->
 
 						<div id="primary-menu-trigger">
-							<svg class="svg-trigger" viewBox="0 0 100 100"><path d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"></path><path d="m 30,50 h 40"></path><path d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"></path></svg>
+							<svg class="svg-trigger" viewBox="0 0 100 100">
+								<path
+									d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20">
+								</path>
+								<path d="m 30,50 h 40"></path>
+								<path
+									d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20">
+								</path>
+							</svg>
 						</div>
 
 						<!-- Primary Navigation
@@ -228,25 +270,39 @@
 
 							<ul class="menu-container">
 								<li class="menu-item">
-									<a class="menu-link" href="/"><div>ホーム</div></a>
+									<a class="menu-link" href="/">
+										<div>ホーム</div>
+									</a>
 								</li>
 								<li class="menu-item">
-									<a class="menu-link" href="#"><div>会社情報</div></a>
+									<a class="menu-link" href="#">
+										<div>会社情報</div>
+									</a>
 								</li>
 								<li class="menu-item mega-menu">
-									<a class="menu-link" href="#"><div>事業内容</div></a>
+									<a class="menu-link" href="#">
+										<div>事業内容</div>
+									</a>
 								</li>
 								<li class="menu-item mega-menu">
-									<a class="menu-link" href="#"><div>新着情報</div></a>
+									<a class="menu-link" href="#">
+										<div>新着情報</div>
+									</a>
 								</li>
 								<li class="menu-item mega-menu">
-									<a class="menu-link" href="#"><div>施工実績</div></a>
+									<a class="menu-link" href="#">
+										<div>施工実績</div>
+									</a>
 								</li>
 								<li class="menu-item mega-menu">
-									<a class="menu-link" href="#"><div>サステナビリティ</div></a>
+									<a class="menu-link" href="#">
+										<div>サステナビリティ</div>
+									</a>
 								</li>
 								<li class="menu-item mega-menu">
-									<a class="menu-link" href="contact-2.html"><div>お問い合わせ</div></a>
+									<a class="menu-link" href="contact-2.html">
+										<div>お問い合わせ</div>
+									</a>
 								</li>
 							</ul>
 
@@ -257,7 +313,8 @@
 			<div class="header-wrap-clone"></div>
 		</header><!-- #header end -->
 
-		<section id="slider" class="slider-element slider-parallax swiper_wrapper min-vh-60 min-vh-md-100 include-header">
+		<section id="slider"
+			class="slider-element slider-parallax swiper_wrapper min-vh-60 min-vh-md-100 include-header">
 			<div class="slider-inner">
 
 				<div class="swiper-container swiper-parent">
@@ -266,20 +323,24 @@
 							<div class="container">
 								<div class="slider-caption slider-caption-center">
 									<h2 data-animate="fadeInUp">技術の先端に挑戦し、</br>常に理想を追い求めて、よりよい未来へ</br>ユニバースをリードする。</h2>
-									<p class="d-none d-sm-block" data-animate="fadeInUp" data-delay="200">ICT、太陽光発電所の建設・メンテナンス、小規模土木工事はお任せください</p>
+									<p class="d-none d-sm-block" data-animate="fadeInUp" data-delay="200">
+										ICT、太陽光発電所の建設・メンテナンス、小規模土木工事はお任せください</p>
 								</div>
 							</div>
-							<div class="swiper-slide-bg" style="background-image: url('images/slider/swiper/uni-1.jpg');"></div>
+							<div class="swiper-slide-bg"
+								style="background-image: url('images/slider/swiper/uni-1.jpg');"></div>
 						</div>
 						<div class="swiper-slide dark">
 							<div class="container">
 								<div class="slider-caption slider-caption-center">
 									<h2 data-animate="fadeInUp">技術の先端に挑戦し、</br>常に理想を追い求めて、よりよい未来へ</br>ユニバースをリードする。</h2>
-									<p class="d-none d-sm-block" data-animate="fadeInUp" data-delay="200">ICT、太陽光発電所の建設・メンテナンス、小規模土木工事はお任せください</p>
+									<p class="d-none d-sm-block" data-animate="fadeInUp" data-delay="200">
+										ICT、太陽光発電所の建設・メンテナンス、小規模土木工事はお任せください</p>
 								</div>
 							</div>
 							<div class="video-wrap">
-								<video id="slide-video" poster="images/videos/explore-poster.jpg" preload="auto" loop autoplay muted>
+								<video id="slide-video" poster="images/videos/explore-poster.jpg" preload="auto" loop
+									autoplay muted>
 									<source src='images/videos/DJI_0055.MP4' type='video/mp4' />
 								</video>
 								<div class="video-overlay" style="background-color: rgba(0,0,0,0.55);"></div>
@@ -289,17 +350,22 @@
 							<div class="container">
 								<div class="slider-caption">
 									<h2 data-animate="fadeInUp">Great Performance</h2>
-									<p class="d-none d-sm-block" data-animate="fadeInUp" data-delay="200">You'll be surprised to see the Final Results of your Creation &amp; would crave for more.</p>
+									<p class="d-none d-sm-block" data-animate="fadeInUp" data-delay="200">You'll be
+										surprised to see the Final Results of your Creation &amp; would crave for more.
+									</p>
 								</div>
 							</div>
-							<div class="swiper-slide-bg" style="background-image: url('images/slider/swiper/3.jpg'); background-position: center top;"></div>
+							<div class="swiper-slide-bg"
+								style="background-image: url('images/slider/swiper/3.jpg'); background-position: center top;">
+							</div>
 						</div>
 					</div>
 					<div class="slider-arrow-left"><i class="icon-angle-left"></i></div>
 					<div class="slider-arrow-right"><i class="icon-angle-right"></i></div>
 				</div>
 
-				<a href="#" data-scrollto="#content" data-offset="100" class="one-page-arrow dark"><i class="icon-angle-down infinite animated fadeInDown"></i></a>
+				<a href="#" data-scrollto="#content" data-offset="100" class="one-page-arrow dark"><i
+						class="icon-angle-down infinite animated fadeInDown"></i></a>
 
 			</div>
 		</section>
@@ -310,20 +376,24 @@
 				<div class="container">
 
 					<div class="row mt-4 col-mb-50">
-						
+
 						<h2 style="text-align: center;">ビジョン、理念</h2>
 
 						<div class="col-lg-4">
-							<i class="i-plain color i-large icon-line2-screen-desktop inline-block" style="margin-bottom: 15px;"></i>
+							<i class="i-plain color i-large icon-line2-screen-desktop inline-block"
+								style="margin-bottom: 15px;"></i>
 							<div class="heading-block border-bottom-0" style="margin-bottom: 15px;">
 								<!-- <span class="before-heading">ビジョン</span> -->
 								<h4>ビジョン</h4>
 							</div>
-							<p>「最先端技術とともに進展し、独自の領域を切り拓くことで新しい価値を創り出し、よりよい未来へ導く」,激しく変化していく時代の最先端技術の開発・応用・組み合わ せを通じて、プロフェショナルとして私たちにしかできないこと を追い求めていき、磨き上げることで新しい価値を生み出すこと が私たちのビジョンです。お客様だけでなく、社会と新しい時代 に求められる事業・サービスを提供し、持続可能な未来のため、 社会の課題に挑みます。</p>
+							<p>「最先端技術とともに進展し、独自の領域を切り拓くことで新しい価値を創り出し、よりよい未来へ導く」,激しく変化していく時代の最先端技術の開発・応用・組み合わ
+								せを通じて、プロフェショナルとして私たちにしかできないこと を追い求めていき、磨き上げることで新しい価値を生み出すこと
+								が私たちのビジョンです。お客様だけでなく、社会と新しい時代 に求められる事業・サービスを提供し、持続可能な未来のため、 社会の課題に挑みます。</p>
 						</div>
 
 						<div class="col-lg-4">
-							<i class="i-plain color i-large icon-line2-energy inline-block" style="margin-bottom: 15px;"></i>
+							<i class="i-plain color i-large icon-line2-energy inline-block"
+								style="margin-bottom: 15px;"></i>
 							<div class="heading-block border-bottom-0" style="margin-bottom: 15px;">
 								<!-- <span class="before-heading">ミッション</span> -->
 								<h4>ミッション</h4>
@@ -332,14 +402,15 @@
 						</div>
 
 						<div class="col-lg-4">
-							<i class="i-plain color i-large icon-line2-equalizer inline-block" style="margin-bottom: 15px;"></i>
+							<i class="i-plain color i-large icon-line2-equalizer inline-block"
+								style="margin-bottom: 15px;"></i>
 							<div class="heading-block border-bottom-0" style="margin-bottom: 15px;">
 								<!-- <span class="before-heading">目標</span> -->
 								<h4>目標</h4>
 							</div>
 							<p>人を大切にし、人を磨き、人が活躍する場を作る,やっている仕事のプロフェショナルであること,同じ価値観をもつ最強のチームを作ること</p>
 						</div>
-<!-- 
+						<!-- 
 						<div class="col-lg-4">
 							<i class="i-plain color i-large icon-line2-equalizer inline-block" style="margin-bottom: 15px;"></i>
 							<div class="heading-block border-bottom-0" style="margin-bottom: 15px;">
@@ -356,100 +427,101 @@
 			<div class="back-color">
 				<div class="container clearfix">
 
-				<div class="heading-block topmargin-lg center">
-					<h2 style="color: #FFF;">会社概要</h2>
-					<!-- <span class="mx-auto">Philanthropy convener livelihoods, initiative end hunger gender rights local. John Lennon storytelling; advocate, altruism impact catalyst.</span> -->
-				</div>
-
-				<div class="row col-mb-50 mb-4">
-					<div class="col-lg-4 d-md-none d-lg-block text-center">
-						<img style="max-width: 90%;" src="images/services/about-1.png" alt="iphone 2">
-					</div>
-					<div class="col-lg-4 col-md-6">
-						<div class="feature-box" data-animate="fadeIn">
-							<div class="fbox-icon">
-								<a href="#"><i class="icon-home2"></i></a>
-							</div>
-							<div class="fbox-content">
-								<h3 style="color: #fff;"> 会社名​</h3>
-								<p> 株式会社UNILEAD（ユニリード）</p>
-							</div>
-						</div>
-
-						<div class="feature-box mt-5" data-animate="fadeIn" data-delay="200">
-							<div class="fbox-icon">
-								<a href="#"><i class="icon-line-head"></i></a>
-							</div>
-							<div class="fbox-content">
-								<h3 style="color: #fff;"> 代表取締役</h3>
-								<p>エルデネバートル・テルグーン​</p>
-							</div>
-						</div>
-
-						<div class="feature-box mt-5" data-animate="fadeIn" data-delay="400">
-							<div class="fbox-icon">
-								<a href="#"><i class="icon-location"></i></a>
-							</div>
-							<div class="fbox-content">
-								<h3 style="color: #fff;">所在地​</h3>
-								<p>〒004-0841 札幌市清田区清田一条四丁目１番45号R4TMビル2003号室​</p>
-							</div>
-						</div>
-						<div class="feature-box mt-5" data-animate="fadeIn" data-delay="600">
-							<div class="fbox-icon">
-								<a href="#"><i class="icon-certificate"></i></a>
-							</div>
-							<div class="fbox-content">
-								<h3 style="color: #fff;">資格</h3>
-								<p>1級⼟⽊施⼯管理技⼠ 1名​, 2級⼟⽊施⼯管理技⼠ 1名​, 2級建築施⼯管理技⼠ 1名​, 第1種電気⼯事⼠ 1名​, 第2種電気⼯事⼠ 1名​, ドローン操縦士1名​​</p>
-							</div>
-						</div>
-
+					<div class="heading-block topmargin-lg center">
+						<h2 style="color: #FFF;">会社概要</h2>
+						<!-- <span class="mx-auto">Philanthropy convener livelihoods, initiative end hunger gender rights local. John Lennon storytelling; advocate, altruism impact catalyst.</span> -->
 					</div>
 
-					<div class="col-lg-4 col-md-6">
+					<div class="row col-mb-50 mb-4">
+						<div class="col-lg-4 d-md-none d-lg-block text-center">
+							<img style="max-width: 90%;" src="images/services/about-1.png" alt="iphone 2">
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="feature-box" data-animate="fadeIn">
+								<div class="fbox-icon">
+									<a href="#"><i class="icon-home2"></i></a>
+								</div>
+								<div class="fbox-content">
+									<h3 style="color: #fff;"> 会社名​</h3>
+									<p> 株式会社UNILEAD（ユニリード）</p>
+								</div>
+							</div>
 
-						<div class="feature-box" data-animate="fadeIn" data-delay="200">
-							<div class="fbox-icon">
-								<a href="#"><i class="icon-users2"></i></a>
+							<div class="feature-box mt-5" data-animate="fadeIn" data-delay="200">
+								<div class="fbox-icon">
+									<a href="#"><i class="icon-line-head"></i></a>
+								</div>
+								<div class="fbox-content">
+									<h3 style="color: #fff;"> 代表取締役</h3>
+									<p>エルデネバートル・テルグーン​</p>
+								</div>
 							</div>
-							<div class="fbox-content">
-								<h3 style="color: #fff;">従業員数</h3>
-								<p>正社員6名<br>パート・アルバイト2名​</p>
+
+							<div class="feature-box mt-5" data-animate="fadeIn" data-delay="400">
+								<div class="fbox-icon">
+									<a href="#"><i class="icon-location"></i></a>
+								</div>
+								<div class="fbox-content">
+									<h3 style="color: #fff;">所在地​</h3>
+									<p>〒004-0841 札幌市清田区清田一条四丁目１番45号R4TMビル2003号室​</p>
+								</div>
 							</div>
+							<div class="feature-box mt-5" data-animate="fadeIn" data-delay="600">
+								<div class="fbox-icon">
+									<a href="#"><i class="icon-certificate"></i></a>
+								</div>
+								<div class="fbox-content">
+									<h3 style="color: #fff;">資格</h3>
+									<p>1級⼟⽊施⼯管理技⼠ 1名​, 2級⼟⽊施⼯管理技⼠ 1名​, 2級建築施⼯管理技⼠ 1名​, 第1種電気⼯事⼠ 1名​, 第2種電気⼯事⼠ 1名​,
+										ドローン操縦士1名​​</p>
+								</div>
+							</div>
+
 						</div>
 
-						<div class="feature-box mt-5" data-animate="fadeIn" data-delay="400">
-							<div class="fbox-icon">
-								<a href="#"><i class="icon-birthday-cake"></i></a>
-							</div>
-							<div class="fbox-content">
-								<h3 style="color: #fff;">設立</h3>
-								<p>2018年11月16日​​​</p>
-							</div>
-						</div>
-						<div class="feature-box mt-5" data-animate="fadeIn" data-delay="600">
-							<div class="fbox-icon">
-								<a href="#"><i class="icon-money-bill-alt1"></i></a>
-							</div>
-							<div class="fbox-content">
-								<h3 style="color: #fff;">資本金</h3>
-								<p>500万円​</p>
-							</div>
-						</div>
+						<div class="col-lg-4 col-md-6">
 
-						<div class="feature-box mt-5" data-animate="fadeIn" data-delay="400">
-							<div class="fbox-icon">
-								<a href="#"><i class="icon-book-open"></i></a>
+							<div class="feature-box" data-animate="fadeIn" data-delay="200">
+								<div class="fbox-icon">
+									<a href="#"><i class="icon-users2"></i></a>
+								</div>
+								<div class="fbox-content">
+									<h3 style="color: #fff;">従業員数</h3>
+									<p>正社員6名<br>パート・アルバイト2名​</p>
+								</div>
 							</div>
-							<div class="fbox-content">
-								<h3 style="color: #fff;">許可</h3>
-								<p>登録電気工事業者（一般用・自家用電気工作物）<br>【北海道知事登録（石狩）第20211088号​,登録支援機関【許可19登-0034469】​</p>
-							</div>
-						</div>
 
+							<div class="feature-box mt-5" data-animate="fadeIn" data-delay="400">
+								<div class="fbox-icon">
+									<a href="#"><i class="icon-birthday-cake"></i></a>
+								</div>
+								<div class="fbox-content">
+									<h3 style="color: #fff;">設立</h3>
+									<p>2018年11月16日​​​</p>
+								</div>
+							</div>
+							<div class="feature-box mt-5" data-animate="fadeIn" data-delay="600">
+								<div class="fbox-icon">
+									<a href="#"><i class="icon-money-bill-alt1"></i></a>
+								</div>
+								<div class="fbox-content">
+									<h3 style="color: #fff;">資本金</h3>
+									<p>500万円​</p>
+								</div>
+							</div>
+
+							<div class="feature-box mt-5" data-animate="fadeIn" data-delay="400">
+								<div class="fbox-icon">
+									<a href="#"><i class="icon-book-open"></i></a>
+								</div>
+								<div class="fbox-content">
+									<h3 style="color: #fff;">許可</h3>
+									<p>登録電気工事業者（一般用・自家用電気工作物）<br>【北海道知事登録（石狩）第20211088号​,登録支援機関【許可19登-0034469】​</p>
+								</div>
+							</div>
+
+						</div>
 					</div>
-				</div>
 
 				</div>
 			</div>
@@ -468,23 +540,32 @@
 								<div class="clear"></div>
 
 								<div class="col-lg-12">
-									<div class="row team team-list rounded-5 g-0 align-items-center shadow-sm border h-shadow h-translatey-sm all-ts rounded-4 overflow-hidden">
+									<div
+										class="row team team-list rounded-5 g-0 align-items-center shadow-sm border h-shadow h-translatey-sm all-ts rounded-4 overflow-hidden">
 										<div class="col-md-4 team-image col-sm-5 d-flex align-self-stretch">
-											<img style="width: 80% !important;" src="images/team/team-01.jpg" alt="John Doe">
+											<img style="width: 80% !important;" src="images/team/team-01.jpg"
+												alt="John Doe">
 										</div>
 										<div class="col-md-8 col-sm-7 p-4">
 											<div class="team-desc text-start">
-												<div class="team-title pt-0 mb-3"><h4>エルデネバートル テルグーン</h4><span class="fst-normal">代表取締役</span></div>
-												<p class="mb-3">弊社の社名「UNILEAD」にはよりよい状態へユニバースをリードするという思いが込められています。再生可能エネルギーと建設業を主軸におき、先端技術を用いて環境問題や人手不足解消に貢献しています。</br>「地球温暖化に伴う食糧問題を食い止める再エネ、それを創る建設技術、おいしい食糧を生産する北海道の大地、そこで活躍する人々」これらは夢のある物語の舞台となると考えています。</br>私たちは人を大切にし、人を磨き、人が活躍するフィールドを作り、先端技術とともに進展していくことで私たちにしかできないこととその可能性を信じて前進してまいります。</br>そしてお客様の期待以上の仕事・サービスを提供できるよう日々の努力を重ね、成長していきます。</p>
-												<a href="#" class="social-icon inline-block si-small si-colored si-rounded si-facebook">
+												<div class="team-title pt-0 mb-3">
+													<h4>エルデネバートル テルグーン</h4><span class="fst-normal">代表取締役</span>
+												</div>
+												<p class="mb-3">
+													弊社の社名「UNILEAD」にはよりよい状態へユニバースをリードするという思いが込められています。再生可能エネルギーと建設業を主軸におき、先端技術を用いて環境問題や人手不足解消に貢献しています。</br>「地球温暖化に伴う食糧問題を食い止める再エネ、それを創る建設技術、おいしい食糧を生産する北海道の大地、そこで活躍する人々」これらは夢のある物語の舞台となると考えています。</br>私たちは人を大切にし、人を磨き、人が活躍するフィールドを作り、先端技術とともに進展していくことで私たちにしかできないこととその可能性を信じて前進してまいります。</br>そしてお客様の期待以上の仕事・サービスを提供できるよう日々の努力を重ね、成長していきます。
+												</p>
+												<a href="#"
+													class="social-icon inline-block si-small si-colored si-rounded si-facebook">
 													<i class="icon-facebook"></i>
 													<i class="icon-facebook"></i>
 												</a>
-												<a href="#" class="social-icon inline-block si-small si-colored si-rounded si-twitter">
+												<a href="#"
+													class="social-icon inline-block si-small si-colored si-rounded si-twitter">
 													<i class="icon-twitter"></i>
 													<i class="icon-twitter"></i>
 												</a>
-												<a href="#" class="social-icon inline-block si-small si-colored si-rounded si-gplus">
+												<a href="#"
+													class="social-icon inline-block si-small si-colored si-rounded si-gplus">
 													<i class="icon-gplus"></i>
 													<i class="icon-gplus"></i>
 												</a>
@@ -507,205 +588,217 @@
 							<div class="container">
 
 								<div class="row mt-4 col-mb-50">
-									
+
 									<h2 style="text-align: center; color: #FFF;">ＵＮＩＬＥＡＤの強み</h2>
 
 									<div class="col-lg-4">
-										<i class="i-plain color i-large icon-line2-screen-desktop inline-block" style="margin-bottom: 15px;"></i>
+										<i class="i-plain color i-large icon-line2-screen-desktop inline-block"
+											style="margin-bottom: 15px;"></i>
 										<div class="heading-block border-bottom-0" style="margin-bottom: 15px;">
 											<!-- <span class="before-heading">ビジョン</span> -->
 											<h4 style="color: #FFF;">技術力</h4>
 										</div>
-										<p">熟練した技術者が施工管理する一般土木工事のみならず、チャレンジ精神が高い若い技術者が特技を発揮するi-constructionなど先端技術を利活用している。</p>
+										<p">熟練した技術者が施工管理する一般土木工事のみならず、チャレンジ精神が高い若い技術者が特技を発揮するi-constructionなど先端技術を利活用している。
+											</p>
 									</div>
 
 									<div class="col-lg-4">
-										<i class="i-plain color i-large icon-line2-energy inline-block" style="margin-bottom: 15px;"></i>
+										<i class="i-plain color i-large icon-line2-energy inline-block"
+											style="margin-bottom: 15px;"></i>
 										<div class="heading-block border-bottom-0" style="margin-bottom: 15px;">
 											<!-- <span class="before-heading">ミッション</span> -->
 											<h4 style="color: #FFF;">経験値</h4>
 										</div>
-										<p>経験年数30年以上の技術者が在籍しており、日々​積み重ねた経験から成り立つ確かな信頼がＵＮＩＬＥＡＤの強みです。<br>弊社に在籍している技術者の資格等:</p>
+										<p>経験年数30年以上の技術者が在籍しており、日々​積み重ねた経験から成り立つ確かな信頼がＵＮＩＬＥＡＤの強みです。<br>弊社に在籍している技術者の資格等:
+										</p>
 										<div class="table-responsive">
 											<table class="table table-bordered mb-0">
 												<tbody>
-												  <tr style="color: #999; font-size: x-small;">
-													<td>1級⼟⽊施⼯管理技⼠ 1名​</td>
-													<td>2級⼟⽊施⼯管理技⼠ 1名​</td>
-													<td>2級建築施⼯管理技⼠ 1名​</td>
-												  </tr>
-												  <tr style="color: #999; font-size: x-small;">
-													<td>第1種電気⼯事⼠ 1名​</td>
-													<td>第2種電気⼯事⼠ 1名​</td>
-													<td>ドローン操縦士 1名​​</td>
-												  </tr>
+													<tr style="color: #999; font-size: x-small;">
+														<td>1級⼟⽊施⼯管理技⼠ 1名​</td>
+														<td>2級⼟⽊施⼯管理技⼠ 1名​</td>
+														<td>2級建築施⼯管理技⼠ 1名​</td>
+													</tr>
+													<tr style="color: #999; font-size: x-small;">
+														<td>第1種電気⼯事⼠ 1名​</td>
+														<td>第2種電気⼯事⼠ 1名​</td>
+														<td>ドローン操縦士 1名​​</td>
+													</tr>
 												</tbody>
 											</table>
 										</div>
 									</div>
 
 									<div class="col-lg-4">
-										<i class="i-plain color i-large icon-line2-equalizer inline-block" style="margin-bottom: 15px;"></i>
+										<i class="i-plain color i-large icon-line2-equalizer inline-block"
+											style="margin-bottom: 15px;"></i>
 										<div class="heading-block border-bottom-0" style="margin-bottom: 15px;">
 											<!-- <span class="before-heading">目標</span> -->
 											<h4 style="color: #FFF;">機動力</h4>
 										</div>
-										<p>ベテランはもちろん未来へ繋がる若手も多いのも特徴。技術者の平均年齢は36.1歳と業界の中でも若く、若いが上のフレッシュさと機動力により安定したスピード性があります。</p>
+										<p>ベテランはもちろん未来へ繋がる若手も多いのも特徴。技術者の平均年齢は36.1歳と業界の中でも若く、若いが上のフレッシュさと機動力により安定したスピード性があります。
+										</p>
 									</div>
 								</div>
 
 							</div>
 						</div>
-					</section><!-- #content end -->	
-				</div>	
-			
-			<div class="container clearfix">
-
-				<div class="row justify-content-center col-mb-50">
-					<h2 style="text-align: center;">事業内容</h2>
-					<div class="col-sm-6 col-lg-4">
-						<div class="feature-box media-box">
-							<div class="fbox-media">
-								<img src="images/unilead/DJI_0053.JPG" alt="Why choose Us?">
-							</div>
-							<div class="fbox-content px-0">
-								<h3>i-construction支援 3DCAD・BIM・CIM</h3>
-								<p>建設業の生産性を向上のため、起工測量、3次元テータ作成、ICT建機による施工、3次元出来形管理、3次元データ納品、CIM、空中写真撮影・動画作成のサービスを提供し、i-constuctionで現場を支援します。</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-sm-6 col-lg-4">
-						<div class="feature-box media-box">
-							<div class="fbox-media">
-								<img src="images/unilead/_VqCCbLE.jpeg" alt="Why choose Us?">
-							</div>
-							<div class="fbox-content px-0">
-								<h3>一般土木・建築工事請負事業.</h3>
-								<p>若手人材でお客様の建設現場を応援します。コンクリート基礎、型枠、鉄筋、小規模土木工事を請け負います。</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-sm-6 col-lg-4">
-						<div class="feature-box media-box">
-							<div class="fbox-media">
-								<img src="images/unilead/DJI_0064.JPG" alt="Why choose Us?">
-							</div>
-							<div class="fbox-content px-0">
-								<h3>再生可能エネルギー事業</h3>
-								<p>太陽光発電所設計・施工・メンテナンスを一式請け負います。今までの経験と実績を活かし、高い品質の発電所を短期間で施工することでお客様のニーズにお応えします。</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-sm-6 col-lg-4">
-						<div class="feature-box media-box">
-							<div class="fbox-media">
-								<img src="images/unilead/tokuteiginou.jpg" alt="Why choose Us?">
-							</div>
-							<div class="fbox-content px-0">
-								<h3>特定技能者支援業務</h3>
-								<p>初めて来日する人でも安心して仕事を続けられるように支援し、お客様の雇用の維持・拡大を努めます。優秀なモンゴル人材を紹介し、就労ビザ取得支援をおこないます。</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-sm-6 col-lg-4">
-						<div class="feature-box media-box">
-							<div class="fbox-media">
-								<img src="images/unilead/w8FlxEIc.jpeg" alt="Why choose Us?">
-							</div>
-							<div class="fbox-content px-0">
-								<h3>貿易（販売及び輸出入）</h3>
-								<p>フェイスガードを製造、販売した経験に基づき、将来衣料品、日用雑貨、食料品の販売及び輸出入に向けて調査中です。</p>
-							</div>
-						</div>
-					</div>
+					</section><!-- #content end -->
 				</div>
 
-			</div>
-			
-			<div class="section m-0" style="padding-top: 0px !important;">
-				<div class="section footer-stick" style="margin-top: 0;">
-	                <div style="background-color: #0A0A0A; padding: 30px;">
-						<h2 style="text-align: center; color: #FFF; margin-top: 0px !important;">サステナビリティ</h2>
-						<h2 style="text-align: center; color: #FFF;">SDGsへの取り組み</h2>
+				<div class="container clearfix">
+
+					<div class="row justify-content-center col-mb-50">
+						<h2 style="text-align: center;">事業内容</h2>
+						<div class="col-sm-6 col-lg-4">
+							<div class="feature-box media-box">
+								<div class="fbox-media">
+									<img src="images/unilead/DJI_0053.JPG" alt="Why choose Us?">
+								</div>
+								<div class="fbox-content px-0">
+									<h3>i-construction支援 3DCAD・BIM・CIM</h3>
+									<p>建設業の生産性を向上のため、起工測量、3次元テータ作成、ICT建機による施工、3次元出来形管理、3次元データ納品、CIM、空中写真撮影・動画作成のサービスを提供し、i-constuctionで現場を支援します。
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-sm-6 col-lg-4">
+							<div class="feature-box media-box">
+								<div class="fbox-media">
+									<img src="images/unilead/_VqCCbLE.jpeg" alt="Why choose Us?">
+								</div>
+								<div class="fbox-content px-0">
+									<h3>一般土木・建築工事請負事業.</h3>
+									<p>若手人材でお客様の建設現場を応援します。コンクリート基礎、型枠、鉄筋、小規模土木工事を請け負います。</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-sm-6 col-lg-4">
+							<div class="feature-box media-box">
+								<div class="fbox-media">
+									<img src="images/unilead/DJI_0064.JPG" alt="Why choose Us?">
+								</div>
+								<div class="fbox-content px-0">
+									<h3>再生可能エネルギー事業</h3>
+									<p>太陽光発電所設計・施工・メンテナンスを一式請け負います。今までの経験と実績を活かし、高い品質の発電所を短期間で施工することでお客様のニーズにお応えします。</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-sm-6 col-lg-4">
+							<div class="feature-box media-box">
+								<div class="fbox-media">
+									<img src="images/unilead/tokuteiginou.jpg" alt="Why choose Us?">
+								</div>
+								<div class="fbox-content px-0">
+									<h3>特定技能者支援業務</h3>
+									<p>初めて来日する人でも安心して仕事を続けられるように支援し、お客様の雇用の維持・拡大を努めます。優秀なモンゴル人材を紹介し、就労ビザ取得支援をおこないます。</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-sm-6 col-lg-4">
+							<div class="feature-box media-box">
+								<div class="fbox-media">
+									<img src="images/unilead/w8FlxEIc.jpeg" alt="Why choose Us?">
+								</div>
+								<div class="fbox-content px-0">
+									<h3>貿易（販売及び輸出入）</h3>
+									<p>フェイスガードを製造、販売した経験に基づき、将来衣料品、日用雑貨、食料品の販売及び輸出入に向けて調査中です。</p>
+								</div>
+							</div>
+						</div>
 					</div>
-					<h4 class="text-uppercase text-center" style="margin-top: 50px;">SDGsとは</h4>
-	
-					<div class="fslider testimonial testimonial-full" data-animation="fade" data-arrows="false">
-						<!-- <div class="testi-image">
+
+				</div>
+
+				<div class="section m-0" style="padding-top: 0px !important;">
+					<div class="section footer-stick" style="margin-top: 0;">
+						<div style="background-color: #0A0A0A; padding: 30px;">
+							<h2 style="text-align: center; color: #FFF; margin-top: 0px !important;">サステナビリティ</h2>
+							<h2 style="text-align: center; color: #FFF;">SDGsへの取り組み</h2>
+						</div>
+						<h4 class="text-uppercase text-center" style="margin-top: 50px;">SDGsとは</h4>
+
+						<div class="fslider testimonial testimonial-full" data-animation="fade" data-arrows="false">
+							<!-- <div class="testi-image">
 							<a href="#"><img src="images/testimonials/3.jpg" alt="Customer Testimonails"></a>
 						</div> -->
-						<div>
-							<p>SDGsとは、２０１５年９月の国連サミットで採択された「持続可能な開発のための２０３０アジェンダ」に記載された２０１６年から２０３０年までの国際目標です。貧困や格差、気候変動などの世界の問題に人類全体が一丸となって取り組み、２０３０年までに解決を目指すものです。</p>
-						</div>
-					</div>
-	
-					<h4 class="text-uppercase text-center">UNILEADの取り組み</h4>
-	
-					<div class="fslider testimonial testimonial-full" data-animation="fade" data-arrows="false">
-						<div>
-							<a href="#"><img src="images/unilead/OHNKqsnQ.jpg" alt="Customer Testimonails"></a>
-						</div>
-						<div>
-							<p>SDGsの１７の目標は企業努力で実現できる範囲を超えた目標もあり、当社が貢献しやすい分野から着手しています。当社は以下の６目標を重点として、活動を開始しています。UNILEADは社員にストレスをかけないため、ノルマや期限を重視していませんが、掲げた目標は時間がかかっても必ず達成しています。</p>
-						</div>
-					</div>
-				</div>
-				<div class="container">
-					<div class="row justify-content-between">
-
-						<!-- Feature Box
-						============================================= -->
-						<div class="col-lg-6 col-md-6 mb-4">
-							<h4 class="mb-3">私たちの働き方</h4>
-							<p>私たちの働き方弊社において熟練技術者はもちろん、若手技術者も活躍しており、社員の平均年齢35.2歳であり、建設業、特に北海道の建設会社の中で僅少な若手人材を揃えた企業です。
-								深刻な人手不足が続く中で、外国人材の活用が必要不可欠になってきています。弊社では、外国人労働者は単純労働だけではなく、高度技術分野でも広く活躍しています。外国人が先端技術に携わり、活躍できることを示すことで、国内外の多くの若者たちに夢と希望を与えることとなります。ICT活用の狙いである人手不足への対処と施行経験者の育成などの目的に適っており、高度技術の習得により、母国の発展にも貢献することが期待されます。弊社はジェンダーの平等にも配慮しており、女性従業員は、電気工事、I-constructionに活躍・挑戦しています。</p>
-							<div class="fbox-media">
-								<img src="images/unilead/OHNKqsnQ (1).jpg" alt="Why choose Us?">
+							<div>
+								<p>SDGsとは、２０１５年９月の国連サミットで採択された「持続可能な開発のための２０３０アジェンダ」に記載された２０１６年から２０３０年までの国際目標です。貧困や格差、気候変動などの世界の問題に人類全体が一丸となって取り組み、２０３０年までに解決を目指すものです。
+								</p>
 							</div>
 						</div>
 
-						<!-- Feature Box
+						<h4 class="text-uppercase text-center">UNILEADの取り組み</h4>
+
+						<div class="fslider testimonial testimonial-full" data-animation="fade" data-arrows="false">
+							<div>
+								<a href="#"><img src="images/unilead/OHNKqsnQ.jpg" alt="Customer Testimonails"></a>
+							</div>
+							<div>
+								<p>SDGsの１７の目標は企業努力で実現できる範囲を超えた目標もあり、当社が貢献しやすい分野から着手しています。当社は以下の６目標を重点として、活動を開始しています。UNILEADは社員にストレスをかけないため、ノルマや期限を重視していませんが、掲げた目標は時間がかかっても必ず達成しています。
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="container">
+						<div class="row justify-content-between">
+
+							<!-- Feature Box
 						============================================= -->
-						<div class="col-lg-6 col-md-6 mb-4">
-							<h4 class="mb-3">再生可能エネルギー・i-construction</h4>
-							<p>環境にやさしいクリーンなエネルギーである太陽光発電所の建設を推進しており、総容量8,486.6kWの34ヵ所の太陽光発電所を施工しました。建設業は、作業員個人の技量や経験などに頼る部分が多い労働集約型の業界です。若い世代の入職者が減少し、熟練技術者の高齢化も課題となっています。建設業は、就労環境が3K（きつい、汚い、危険）のイメージが浸透しています。建設技能者数は、現在60歳以上が81万人、30歳未満が36万人となっており、10年後には深刻な労働力不足が見込まれます。人口の減少や高齢化が進む中にあっても、これからの役割を果たすため、建設業の生産性向上が求められているところです。国土交通省は、調査・測量から設計、施工、検査、維持管理・更新までの全ての建設プロセスにi-constructionの活用を推進し、建設現場の生産性を2025年度までに2割向上する目標を掲げています。弊社の活動は、これらの社会的要請に応えうるものとなっています。</p>
-							<div class="fbox-media">
-								<img src="images/unilead/OHNKqsnQ (2).jpg" alt="Why choose Us?">
+							<div class="col-lg-6 col-md-6 mb-4">
+								<h4 class="mb-3">私たちの働き方</h4>
+								<p>私たちの働き方弊社において熟練技術者はもちろん、若手技術者も活躍しており、社員の平均年齢35.2歳であり、建設業、特に北海道の建設会社の中で僅少な若手人材を揃えた企業です。
+									深刻な人手不足が続く中で、外国人材の活用が必要不可欠になってきています。弊社では、外国人労働者は単純労働だけではなく、高度技術分野でも広く活躍しています。外国人が先端技術に携わり、活躍できることを示すことで、国内外の多くの若者たちに夢と希望を与えることとなります。ICT活用の狙いである人手不足への対処と施行経験者の育成などの目的に適っており、高度技術の習得により、母国の発展にも貢献することが期待されます。弊社はジェンダーの平等にも配慮しており、女性従業員は、電気工事、I-constructionに活躍・挑戦しています。
+								</p>
+								<div class="fbox-media">
+									<img src="images/unilead/OHNKqsnQ (1).jpg" alt="Why choose Us?">
+								</div>
+							</div>
+
+							<!-- Feature Box
+						============================================= -->
+							<div class="col-lg-6 col-md-6 mb-4">
+								<h4 class="mb-3">再生可能エネルギー・i-construction</h4>
+								<p>環境にやさしいクリーンなエネルギーである太陽光発電所の建設を推進しており、総容量8,486.6kWの34ヵ所の太陽光発電所を施工しました。建設業は、作業員個人の技量や経験などに頼る部分が多い労働集約型の業界です。若い世代の入職者が減少し、熟練技術者の高齢化も課題となっています。建設業は、就労環境が3K（きつい、汚い、危険）のイメージが浸透しています。建設技能者数は、現在60歳以上が81万人、30歳未満が36万人となっており、10年後には深刻な労働力不足が見込まれます。人口の減少や高齢化が進む中にあっても、これからの役割を果たすため、建設業の生産性向上が求められているところです。国土交通省は、調査・測量から設計、施工、検査、維持管理・更新までの全ての建設プロセスにi-constructionの活用を推進し、建設現場の生産性を2025年度までに2割向上する目標を掲げています。弊社の活動は、これらの社会的要請に応えうるものとなっています。
+								</p>
+								<div class="fbox-media">
+									<img src="images/unilead/OHNKqsnQ (2).jpg" alt="Why choose Us?">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="section footer-stick" style="margin-top: 0px;">
+
+						<h4 class="text-uppercase text-center">環境への取り組み</h4>
+
+						<div class="fslider testimonial testimonial-full" data-animation="fade" data-arrows="false">
+							<div>
+								<a href="#"><img src="images/unilead/OHNKqsnQ (3).jpg" alt="Customer Testimonails"></a>
+							</div>
+							<div>
+								<p>弊社の施工した太陽光発電所31ヵ所は、年間/月間〇〇kWhの電気を発電している。これは、〇〇トン/kgのCO₂の排出を削減した。</p>
+							</div>
+						</div>
+
+						<h4 class="text-uppercase text-center">社会への取り組み</h4>
+
+						<div class="fslider testimonial testimonial-full" data-animation="fade" data-arrows="false">
+							<div>
+								<p>新型コロナウィルスの感染拡大防止に少しでも役に立てればと思い、近隣の小中高等学校に弊社が製造しているフェイスシールドを寄付させていただきました。一人ひとりの感染拡大防止に努力することはもちろん、弊社としても地域の一員としてできることで応援していきたいです。
+								</p>
+							</div>
+							<div>
+								<a href="#"><img src="images/unilead/w8FlxEIc.jpeg" alt="Customer Testimonails"></a>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="section footer-stick" style="margin-top: 0px;">
 
-					<h4 class="text-uppercase text-center">環境への取り組み</h4>
-	
-					<div class="fslider testimonial testimonial-full" data-animation="fade" data-arrows="false">
-						<div>
-							<a href="#"><img src="images/unilead/OHNKqsnQ (3).jpg" alt="Customer Testimonails"></a>
-						</div>
-						<div>
-							<p>弊社の施工した太陽光発電所31ヵ所は、年間/月間〇〇kWhの電気を発電している。これは、〇〇トン/kgのCO₂の排出を削減した。</p>
-						</div>
-					</div>
-	
-					<h4 class="text-uppercase text-center">社会への取り組み</h4>
-	
-					<div class="fslider testimonial testimonial-full" data-animation="fade" data-arrows="false">
-						<div>
-							<p>新型コロナウィルスの感染拡大防止に少しでも役に立てればと思い、近隣の小中高等学校に弊社が製造しているフェイスシールドを寄付させていただきました。一人ひとりの感染拡大防止に努力することはもちろん、弊社としても地域の一員としてできることで応援していきたいです。</p>
-						</div>
-						<div>
-							<a href="#"><img src="images/unilead/w8FlxEIc.jpeg" alt="Customer Testimonails"></a>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<!-- <section id="content">
+				<!-- <section id="content">
 					<div class="content-wrap">
 						<div class="container">
 							<div style="text-align: center;">
@@ -789,124 +882,144 @@
 					</div>
 				</section> -->
 
-			<div class="section">
-				<div class="container clearfix">
+				<div class="section">
+					<div class="container clearfix">
 
-					<div class="heading-block topmargin-sm center">
-						<h3>チームメンバー</h3>
+						<div class="heading-block topmargin-sm center">
+							<h3>チームメンバー</h3>
+						</div>
+
+						<div class="row">
+
+							<div class="col-lg-3 col-md-6 bottommargin">
+
+								<div class="team">
+									<div class="team-image">
+										<img src="images/team/team-01.jpg" alt="John Doe">
+									</div>
+									<div class="team-desc team-desc-bg">
+										<div class="team-title">
+											<h4>John Doe</h4><span>CEO</span>
+										</div>
+										<a href="#"
+											class="social-icon inline-block si-small si-light si-rounded si-facebook">
+											<i class="icon-facebook"></i>
+											<i class="icon-facebook"></i>
+										</a>
+										<a href="#"
+											class="social-icon inline-block si-small si-light si-rounded si-twitter">
+											<i class="icon-twitter"></i>
+											<i class="icon-twitter"></i>
+										</a>
+										<a href="#"
+											class="social-icon inline-block si-small si-light si-rounded si-gplus">
+											<i class="icon-gplus"></i>
+											<i class="icon-gplus"></i>
+										</a>
+									</div>
+								</div>
+
+							</div>
+
+							<div class="col-lg-3 col-md-6 bottommargin">
+
+								<div class="team">
+									<div class="team-image">
+										<img src="images/team/team-02.jpg" alt="Josh Clark">
+									</div>
+									<div class="team-desc team-desc-bg">
+										<div class="team-title">
+											<h4>Josh Clark</h4><span>Co-Founder</span>
+										</div>
+										<a href="#"
+											class="social-icon inline-block si-small si-light si-rounded si-facebook">
+											<i class="icon-facebook"></i>
+											<i class="icon-facebook"></i>
+										</a>
+										<a href="#"
+											class="social-icon inline-block si-small si-light si-rounded si-twitter">
+											<i class="icon-twitter"></i>
+											<i class="icon-twitter"></i>
+										</a>
+										<a href="#"
+											class="social-icon inline-block si-small si-light si-rounded si-gplus">
+											<i class="icon-gplus"></i>
+											<i class="icon-gplus"></i>
+										</a>
+									</div>
+								</div>
+
+							</div>
+
+							<div class="col-lg-3 col-md-6 bottommargin">
+
+								<div class="team">
+									<div class="team-image">
+										<img src="images/team/team-01.jpg" alt="Mary Jane">
+									</div>
+									<div class="team-desc team-desc-bg">
+										<div class="team-title">
+											<h4>Mary Jane</h4><span>Sales</span>
+										</div>
+										<a href="#"
+											class="social-icon inline-block si-small si-light si-rounded si-facebook">
+											<i class="icon-facebook"></i>
+											<i class="icon-facebook"></i>
+										</a>
+										<a href="#"
+											class="social-icon inline-block si-small si-light si-rounded si-twitter">
+											<i class="icon-twitter"></i>
+											<i class="icon-twitter"></i>
+										</a>
+										<a href="#"
+											class="social-icon inline-block si-small si-light si-rounded si-gplus">
+											<i class="icon-gplus"></i>
+											<i class="icon-gplus"></i>
+										</a>
+									</div>
+								</div>
+
+							</div>
+
+							<div class="col-lg-3 col-md-6 bottommargin">
+
+								<div class="team">
+									<div class="team-image">
+										<img src="images/team/team-02.jpg" alt="Nix Maxwell">
+									</div>
+									<div class="team-desc team-desc-bg">
+										<div class="team-title">
+											<h4>Nix Maxwell</h4><span>Support</span>
+										</div>
+										<a href="#"
+											class="social-icon inline-block si-small si-light si-rounded si-facebook">
+											<i class="icon-facebook"></i>
+											<i class="icon-facebook"></i>
+										</a>
+										<a href="#"
+											class="social-icon inline-block si-small si-light si-rounded si-twitter">
+											<i class="icon-twitter"></i>
+											<i class="icon-twitter"></i>
+										</a>
+										<a href="#"
+											class="social-icon inline-block si-small si-light si-rounded si-gplus">
+											<i class="icon-gplus"></i>
+											<i class="icon-gplus"></i>
+										</a>
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+
 					</div>
-					
-					<div class="row">
-
-						<div class="col-lg-3 col-md-6 bottommargin">
-
-							<div class="team">
-								<div class="team-image">
-									<img src="images/team/team-01.jpg" alt="John Doe">
-								</div>
-								<div class="team-desc team-desc-bg">
-									<div class="team-title"><h4>John Doe</h4><span>CEO</span></div>
-									<a href="#" class="social-icon inline-block si-small si-light si-rounded si-facebook">
-										<i class="icon-facebook"></i>
-										<i class="icon-facebook"></i>
-									</a>
-									<a href="#" class="social-icon inline-block si-small si-light si-rounded si-twitter">
-										<i class="icon-twitter"></i>
-										<i class="icon-twitter"></i>
-									</a>
-									<a href="#" class="social-icon inline-block si-small si-light si-rounded si-gplus">
-										<i class="icon-gplus"></i>
-										<i class="icon-gplus"></i>
-									</a>
-								</div>
-							</div>
-
-						</div>
-
-						<div class="col-lg-3 col-md-6 bottommargin">
-
-							<div class="team">
-								<div class="team-image">
-									<img src="images/team/team-02.jpg" alt="Josh Clark">
-								</div>
-								<div class="team-desc team-desc-bg">
-									<div class="team-title"><h4>Josh Clark</h4><span>Co-Founder</span></div>
-									<a href="#" class="social-icon inline-block si-small si-light si-rounded si-facebook">
-										<i class="icon-facebook"></i>
-										<i class="icon-facebook"></i>
-									</a>
-									<a href="#" class="social-icon inline-block si-small si-light si-rounded si-twitter">
-										<i class="icon-twitter"></i>
-										<i class="icon-twitter"></i>
-									</a>
-									<a href="#" class="social-icon inline-block si-small si-light si-rounded si-gplus">
-										<i class="icon-gplus"></i>
-										<i class="icon-gplus"></i>
-									</a>
-								</div>
-							</div>
-
-						</div>
-
-						<div class="col-lg-3 col-md-6 bottommargin">
-
-							<div class="team">
-								<div class="team-image">
-									<img src="images/team/team-01.jpg" alt="Mary Jane">
-								</div>
-								<div class="team-desc team-desc-bg">
-									<div class="team-title"><h4>Mary Jane</h4><span>Sales</span></div>
-									<a href="#" class="social-icon inline-block si-small si-light si-rounded si-facebook">
-										<i class="icon-facebook"></i>
-										<i class="icon-facebook"></i>
-									</a>
-									<a href="#" class="social-icon inline-block si-small si-light si-rounded si-twitter">
-										<i class="icon-twitter"></i>
-										<i class="icon-twitter"></i>
-									</a>
-									<a href="#" class="social-icon inline-block si-small si-light si-rounded si-gplus">
-										<i class="icon-gplus"></i>
-										<i class="icon-gplus"></i>
-									</a>
-								</div>
-							</div>
-
-						</div>
-
-						<div class="col-lg-3 col-md-6 bottommargin">
-
-							<div class="team">
-								<div class="team-image">
-									<img src="images/team/team-02.jpg" alt="Nix Maxwell">
-								</div>
-								<div class="team-desc team-desc-bg">
-									<div class="team-title"><h4>Nix Maxwell</h4><span>Support</span></div>
-									<a href="#" class="social-icon inline-block si-small si-light si-rounded si-facebook">
-										<i class="icon-facebook"></i>
-										<i class="icon-facebook"></i>
-									</a>
-									<a href="#" class="social-icon inline-block si-small si-light si-rounded si-twitter">
-										<i class="icon-twitter"></i>
-										<i class="icon-twitter"></i>
-									</a>
-									<a href="#" class="social-icon inline-block si-small si-light si-rounded si-gplus">
-										<i class="icon-gplus"></i>
-										<i class="icon-gplus"></i>
-									</a>
-								</div>
-							</div>
-
-						</div>
-
-					</div>
-
 				</div>
-			</div>
 
 				<!-- Document Wrapper
 				============================================= -->
-			<div id="wrapper" class="clearfix">
-				<!-- <section id="content">
+				<div id="wrapper" class="clearfix">
+					<!-- <section id="content">
 					<div class="content-wrap">
 
 						<div class="container">
@@ -947,10 +1060,10 @@
 
 					</div>
 				</section> -->
-			</div>
-			<div class="container clearfix">
+				</div>
+				<div class="container clearfix">
 
-				<!-- <div id="oc-clients" class="owl-carousel image-carousel carousel-widget" data-margin="60" data-loop="true" data-nav="false" data-autoplay="5000" data-pagi="false" data-items-xs="2" data-items-sm="3" data-items-md="4" data-items-lg="5" data-items-xl="6">
+					<!-- <div id="oc-clients" class="owl-carousel image-carousel carousel-widget" data-margin="60" data-loop="true" data-nav="false" data-autoplay="5000" data-pagi="false" data-items-xs="2" data-items-sm="3" data-items-md="4" data-items-lg="5" data-items-xl="6">
 
 					<div class="oc-item"><a href="#"><img src="images/clients/1.png" alt="Clients"></a></div>
 					<div class="oc-item"><a href="#"><img src="images/clients/2.png" alt="Clients"></a></div>
@@ -966,7 +1079,7 @@
 				</div> -->
 
 
-			</div>
+				</div>
 			</div>
 		</section><!-- #content end -->
 
@@ -1034,7 +1147,8 @@
 
 							<div class="clear"></div>
 
-							<i class="icon-envelope2"></i> info@unilead.co.jp <span class="middot">&middot;</span> <i class="icon-headphones"></i> 011-311-3848 <span class="middot">&middot;</span>
+							<i class="icon-envelope2"></i> info@unilead.co.jp <span class="middot">&middot;</span> <i
+								class="icon-headphones"></i> 011-311-3848 <span class="middot">&middot;</span>
 						</div>
 
 					</div>
@@ -1059,4 +1173,5 @@
 	<script src="js/functions.js"></script>
 
 </body>
+
 </html>
