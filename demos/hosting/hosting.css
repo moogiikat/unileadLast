@@ -73,8 +73,6 @@
 	line-height: 52px;
 }
 
-.dark #header-wrap:not(.not-dark) .primary-menu > ul > li > a { color: #FFF !important; }
-
 .slider-element { height: 700px; }
 
 .menu-link { letter-spacing: 0; }
