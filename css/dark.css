@@ -216,7 +216,7 @@ body #side-panel.dark {
 }
 
 .dark .menu-link {
-	color: #F7F7F7;
+	color: #444444;
 }
 
 .dark .primary-menu:not(.not-dark) .sub-menu-container .menu-item > .menu-link {

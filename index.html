@@ -19,6 +19,12 @@
 	<link rel="stylesheet" href="css/animate.css" type="text/css" />
 	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
 
+	<!-- Yoga Demo Specific Stylesheet -->
+	<link rel="stylesheet" href="css/colors.php?color=7E9680" type="text/css" /> <!-- Yoga Theme Color -->
+	<link rel="stylesheet" href="demos/yoga/css/fonts.css" type="text/css" /> <!-- Yoga Theme Font -->
+	<link rel="stylesheet" href="demos/yoga/yoga.css" type="text/css" /> <!-- Yoga Theme Custom CSS -->
+	<!-- / -->
+
 	<link rel="stylesheet" href="css/custom.css" type="text/css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -60,14 +66,13 @@
 	}
 
 	/* Larger Device */
-	@media (min-width: 992px) {ßßß
-
+	@media (min-width: 992px) {
 		.block-expand-categories .expand-category {
 			height: var(--height);
 			flex: 1;
 			margin: 0 10px;
 			transition: flex 1s ease;
-			-webkit-backface-visibility: hidden;
+			/* -webkit-backface-visibility: hidden; */
 			transform: translate3d(0, 0, 0);
 		}
 
@@ -312,215 +317,707 @@
 			</div>
 			<div class="header-wrap-clone"></div>
 		</header><!-- #header end -->
-
-		<section id="slider"
-			class="slider-element slider-parallax swiper_wrapper min-vh-60 min-vh-md-100 include-header">
+		<!-- Slider
+		============================================= -->
+		<section id="slider" class="slider-element swiper_wrapper min-vh-100" data-effect="fade">
 			<div class="slider-inner">
 
 				<div class="swiper-container swiper-parent">
 					<div class="swiper-wrapper">
-						<div class="swiper-slide dark">
-							<div class="container">
-								<div class="slider-caption slider-caption-center">
-									<h2 data-animate="fadeInUp">技術の先端に挑戦し、</br>常に理想を追い求めて、よりよい未来へ</br>ユニバースをリードする。</h2>
-									<p class="d-none d-sm-block" data-animate="fadeInUp" data-delay="200">
-										ICT、太陽光発電所の建設・メンテナンス、小規模土木工事はお任せください</p>
+						<!-- Slide 1 -->
+						<div class="swiper-slide hero-diagonal dark bg-color"
+							style="background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0, 0.1)), url('images/slider/swiper/uni2.jpeg') no-repeat center right / auto 100%;">
+							<div class="container" style="z-index: 2;">
+								<div class="row h-100 align-items-center py-5">
+									<div class="col-md-6">
+										<div class="heading-block border-bottom-0 bottommargin-sm">
+											<h2 data-animate="fadeInUp">
+												技術の先端に挑戦し、</br>常に理想を追い求めて、よりよい未来へ</br>ユニバースをリードする。</h2>
+										</div>
+										<p class="mb-5 fw-normal lead" data-animate="fadeInUp" data-delay="400"
+											style="line-height: 1.6;">ICT、太陽光発電所の建設・メンテナンス、</br>小規模土木工事はお任せください</p>
+										<a href="#" data-scrollto="#section-about" data-offset="70"
+											data-animate="fadeInUp" data-delay="600"
+											class="btn rounded bg-white color text-uppercase fw-semibold ls1 py-3 px-4">お問い合わせ
+											<i class="icon-line-arrow-right"></i></a>
+									</div>
 								</div>
-							</div>
-							<div class="swiper-slide-bg"
-								style="background-image: url('images/slider/swiper/uni-1.jpg');"></div>
-						</div>
-						<div class="swiper-slide dark">
-							<div class="container">
-								<div class="slider-caption slider-caption-center">
-									<h2 data-animate="fadeInUp">技術の先端に挑戦し、</br>常に理想を追い求めて、よりよい未来へ</br>ユニバースをリードする。</h2>
-									<p class="d-none d-sm-block" data-animate="fadeInUp" data-delay="200">
-										ICT、太陽光発電所の建設・メンテナンス、小規模土木工事はお任せください</p>
-								</div>
-							</div>
-							<div class="video-wrap">
-								<video id="slide-video" poster="images/videos/explore-poster.jpg" preload="auto" loop
-									autoplay muted>
-									<source src='images/videos/DJI_0055.MP4' type='video/mp4' />
-								</video>
-								<div class="video-overlay" style="background-color: rgba(0,0,0,0.55);"></div>
 							</div>
 						</div>
-						<div class="swiper-slide">
-							<div class="container">
-								<div class="slider-caption">
-									<h2 data-animate="fadeInUp">Great Performance</h2>
-									<p class="d-none d-sm-block" data-animate="fadeInUp" data-delay="200">You'll be
-										surprised to see the Final Results of your Creation &amp; would crave for more.
-									</p>
+
+						<!-- Slide 2 -->
+						<div class="swiper-slide hero-diagonal dark bg-color"
+							style="background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0, 0.1)), url('demos/yoga/images/slider/hero-2.jpg') no-repeat bottom right / auto 100%;">
+							<div class="container" style="z-index: 2;">
+								<div class="row h-100 align-items-center py-5">
+									<div class="col-md-6">
+										<div class="heading-block border-bottom-0 bottommargin-sm">
+											<h2 data-animate="fadeInUp">
+												技術の先端に挑戦し、</br>常に理想を追い求めて、よりよい未来へ</br>ユニバースをリードする。</h2>
+										</div>
+										<p class="mb-5 fw-normal lead" data-animate="fadeInUp" data-delay="400"
+											style="line-height: 1.6;">ICT、太陽光発電所の建設・メンテナンス、</br>小規模土木工事はお任せください</p>
+										<a href="#" data-scrollto="#section-about" data-offset="70"
+											data-animate="fadeInUp" data-delay="600"
+											class="btn rounded bg-white color text-uppercase fw-semibold ls1 py-3 px-4">お問い合わせ
+											<i class="icon-line-arrow-right"></i></a>
+									</div>
 								</div>
-							</div>
-							<div class="swiper-slide-bg"
-								style="background-image: url('images/slider/swiper/3.jpg'); background-position: center top;">
 							</div>
 						</div>
 					</div>
 					<div class="slider-arrow-left"><i class="icon-angle-left"></i></div>
 					<div class="slider-arrow-right"><i class="icon-angle-right"></i></div>
+					<div class="slide-number">
+						<div class="slide-number-current"></div><span>/</span>
+						<div class="slide-number-total"></div>
+					</div>
 				</div>
-
-				<a href="#" data-scrollto="#content" data-offset="100" class="one-page-arrow dark"><i
-						class="icon-angle-down infinite animated fadeInDown"></i></a>
 
 			</div>
 		</section>
+
 		<!-- Content
 		============================================= -->
-		<section id="content">
-			<div class="section my-0">
-				<div class="container">
+		<section id="content" class="bg-white">
+			<div class="content-wrap pt-0" style="overflow: visible">
+				<div class="position-relative">
+					<div class="container">
+						<div class="row py-0 py-lg-5">
+							<div class="col-lg-5 py-5">
+								<div class="heading-block border-bottom-0 bottommargin-sm">
+									<div class="fancy-title title-border mb-3">
+										<h5 class="fw-normal color font-body">Unilead</h5>
+									</div>
+									<h3 class="fw-bold nott" style="font-size: 42px; letter-spacing: -1px;">
+										<span>理念</span>
+									</h3>
+								</div>
 
-					<div class="row mt-4 col-mb-50">
+								<div class="feature-box fbox-plain bottommargin-sm">
+									<div class="fbox-icon">
+										<i class="icon-line-circle-check text-primary"></i>
+									</div>
+									<div class="fbox-content">
+										<h3 class="fw-normal nott">ビジョン</h3>
+										<p>最先端技術とともに進展し、独自の領域を切り拓くことで新しい価値を創り出し、よりよい未来へ導く</p>
+									</div>
+								</div>
 
-						<h2 style="text-align: center;">ビジョン、理念</h2>
+								<div class="feature-box fbox-plain bottommargin-sm">
+									<div class="fbox-icon">
+										<i class="icon-line-circle-check text-warning"></i>
+									</div>
+									<div class="fbox-content">
+										<h3 class="fw-normal nott">ミッション</h3>
+										<p>あらゆる面でのあるべき状態のお手本になり、新しい道を切り拓き、夢を与える</p>
+									</div>
+								</div>
 
-						<div class="col-lg-4">
-							<i class="i-plain color i-large icon-line2-screen-desktop inline-block"
-								style="margin-bottom: 15px;"></i>
-							<div class="heading-block border-bottom-0" style="margin-bottom: 15px;">
-								<!-- <span class="before-heading">ビジョン</span> -->
-								<h4>ビジョン</h4>
+								<div class="feature-box fbox-plain">
+									<div class="fbox-icon">
+										<i class="icon-line-circle-check text-info"></i>
+									</div>
+									<div class="fbox-content">
+										<h3 class="fw-normal nott">目標</h3>
+										<p>社員一人一人を大切にし、活躍する環境を作り,同じ価値観をもつ最強のチームを作る</p>
+									</div>
+								</div>
 							</div>
-							<p>「最先端技術とともに進展し、独自の領域を切り拓くことで新しい価値を創り出し、よりよい未来へ導く」,激しく変化していく時代の最先端技術の開発・応用・組み合わ
-								せを通じて、プロフェショナルとして私たちにしかできないこと を追い求めていき、磨き上げることで新しい価値を生み出すこと
-								が私たちのビジョンです。お客様だけでなく、社会と新しい時代 に求められる事業・サービスを提供し、持続可能な未来のため、 社会の課題に挑みます。</p>
 						</div>
-
-						<div class="col-lg-4">
-							<i class="i-plain color i-large icon-line2-energy inline-block"
-								style="margin-bottom: 15px;"></i>
-							<div class="heading-block border-bottom-0" style="margin-bottom: 15px;">
-								<!-- <span class="before-heading">ミッション</span> -->
-								<h4>ミッション</h4>
-							</div>
-							<p>あらゆる面でのあるべき状態のお手本になり、新しい道を切り拓き、夢を与えることが私たちの使命だと考えています。</p>
-						</div>
-
-						<div class="col-lg-4">
-							<i class="i-plain color i-large icon-line2-equalizer inline-block"
-								style="margin-bottom: 15px;"></i>
-							<div class="heading-block border-bottom-0" style="margin-bottom: 15px;">
-								<!-- <span class="before-heading">目標</span> -->
-								<h4>目標</h4>
-							</div>
-							<p>人を大切にし、人を磨き、人が活躍する場を作る,やっている仕事のプロフェショナルであること,同じ価値観をもつ最強のチームを作ること</p>
-						</div>
-						<!-- 
-						<div class="col-lg-4">
-							<i class="i-plain color i-large icon-line2-equalizer inline-block" style="margin-bottom: 15px;"></i>
-							<div class="heading-block border-bottom-0" style="margin-bottom: 15px;">
-								<span class="before-heading">行動方針</span>
-								<h4>Truly Multi-Purpose</h4>
-							</div>
-							<p>Democracy inspire breakthroughs, Rosa Parks; inspiration raise awareness natural resources. Governance impact; transformative donation philanthropy, respect reproductive.</p>
-						</div> -->
-
 					</div>
-
+					<div class="section-img"
+						style="background: radial-gradient(ellipse at center, rgba(0,0,0,0), rgba(0,0,0, 0.1)), url('images/slider/swiper/cover.jpeg') no-repeat center center / cover">
+						<img class="section-img-sm" src="images/slider/swiper/DJI_0063.JPG" alt="Section Img">
+					</div>
 				</div>
 			</div>
-			<div class="back-color">
-				<div class="container clearfix">
 
-					<div class="heading-block topmargin-lg center">
-						<h2 style="color: #FFF;">会社概要</h2>
-						<!-- <span class="mx-auto">Philanthropy convener livelihoods, initiative end hunger gender rights local. John Lennon storytelling; advocate, altruism impact catalyst.</span> -->
+		</section><!-- #content end -->
+
+		<div class="back-color">
+			<div class="container clearfix">
+
+				<div class="heading-block topmargin-lg center">
+					<h2 style="color: #FFF;">会社概要</h2>
+					<!-- <span class="mx-auto">Philanthropy convener livelihoods, initiative end hunger gender rights local. John Lennon storytelling; advocate, altruism impact catalyst.</span> -->
+				</div>
+
+				<div class="row col-mb-50 mb-4">
+					<div class="col-lg-4 d-md-none d-lg-block text-center">
+						<img style="max-width: 90%;" src="images/services/about-1.png" alt="iphone 2">
+					</div>
+					<div class="col-lg-4 col-md-6">
+						<div class="feature-box" data-animate="fadeIn">
+							<div class="fbox-icon">
+								<a href="#"><i class="icon-home2"></i></a>
+							</div>
+							<div class="fbox-content">
+								<h3 style="color: #fff;"> 会社名​</h3>
+								<p> 株式会社UNILEAD（ユニリード）</p>
+							</div>
+						</div>
+
+						<div class="feature-box mt-5" data-animate="fadeIn" data-delay="200">
+							<div class="fbox-icon">
+								<a href="#"><i class="icon-line-head"></i></a>
+							</div>
+							<div class="fbox-content">
+								<h3 style="color: #fff;"> 代表取締役</h3>
+								<p>エルデネバートル・テルグーン​</p>
+							</div>
+						</div>
+
+						<div class="feature-box mt-5" data-animate="fadeIn" data-delay="400">
+							<div class="fbox-icon">
+								<a href="#"><i class="icon-location"></i></a>
+							</div>
+							<div class="fbox-content">
+								<h3 style="color: #fff;">所在地​</h3>
+								<p>〒004-0841 札幌市清田区清田一条四丁目１番45号R4TMビル2003号室​</p>
+							</div>
+						</div>
+						<div class="feature-box mt-5" data-animate="fadeIn" data-delay="600">
+							<div class="fbox-icon">
+								<a href="#"><i class="icon-certificate"></i></a>
+							</div>
+							<div class="fbox-content">
+								<h3 style="color: #fff;">資格</h3>
+								<p>1級⼟⽊施⼯管理技⼠ 1名​, 2級⼟⽊施⼯管理技⼠ 1名​, 2級建築施⼯管理技⼠ 1名​, 第1種電気⼯事⼠ 1名​, 第2種電気⼯事⼠ 1名​,
+									ドローン操縦士1名​​</p>
+							</div>
+						</div>
+
 					</div>
 
-					<div class="row col-mb-50 mb-4">
-						<div class="col-lg-4 d-md-none d-lg-block text-center">
-							<img style="max-width: 90%;" src="images/services/about-1.png" alt="iphone 2">
-						</div>
-						<div class="col-lg-4 col-md-6">
-							<div class="feature-box" data-animate="fadeIn">
-								<div class="fbox-icon">
-									<a href="#"><i class="icon-home2"></i></a>
-								</div>
-								<div class="fbox-content">
-									<h3 style="color: #fff;"> 会社名​</h3>
-									<p> 株式会社UNILEAD（ユニリード）</p>
-								</div>
-							</div>
+					<div class="col-lg-4 col-md-6">
 
-							<div class="feature-box mt-5" data-animate="fadeIn" data-delay="200">
-								<div class="fbox-icon">
-									<a href="#"><i class="icon-line-head"></i></a>
-								</div>
-								<div class="fbox-content">
-									<h3 style="color: #fff;"> 代表取締役</h3>
-									<p>エルデネバートル・テルグーン​</p>
-								</div>
+						<div class="feature-box" data-animate="fadeIn" data-delay="200">
+							<div class="fbox-icon">
+								<a href="#"><i class="icon-users2"></i></a>
 							</div>
-
-							<div class="feature-box mt-5" data-animate="fadeIn" data-delay="400">
-								<div class="fbox-icon">
-									<a href="#"><i class="icon-location"></i></a>
-								</div>
-								<div class="fbox-content">
-									<h3 style="color: #fff;">所在地​</h3>
-									<p>〒004-0841 札幌市清田区清田一条四丁目１番45号R4TMビル2003号室​</p>
-								</div>
+							<div class="fbox-content">
+								<h3 style="color: #fff;">従業員数</h3>
+								<p>正社員6名<br>パート・アルバイト2名​</p>
 							</div>
-							<div class="feature-box mt-5" data-animate="fadeIn" data-delay="600">
-								<div class="fbox-icon">
-									<a href="#"><i class="icon-certificate"></i></a>
-								</div>
-								<div class="fbox-content">
-									<h3 style="color: #fff;">資格</h3>
-									<p>1級⼟⽊施⼯管理技⼠ 1名​, 2級⼟⽊施⼯管理技⼠ 1名​, 2級建築施⼯管理技⼠ 1名​, 第1種電気⼯事⼠ 1名​, 第2種電気⼯事⼠ 1名​,
-										ドローン操縦士1名​​</p>
-								</div>
-							</div>
-
 						</div>
 
-						<div class="col-lg-4 col-md-6">
+						<div class="feature-box mt-5" data-animate="fadeIn" data-delay="400">
+							<div class="fbox-icon">
+								<a href="#"><i class="icon-birthday-cake"></i></a>
+							</div>
+							<div class="fbox-content">
+								<h3 style="color: #fff;">設立</h3>
+								<p>2018年11月16日​​​</p>
+							</div>
+						</div>
+						<div class="feature-box mt-5" data-animate="fadeIn" data-delay="600">
+							<div class="fbox-icon">
+								<a href="#"><i class="icon-money-bill-alt1"></i></a>
+							</div>
+							<div class="fbox-content">
+								<h3 style="color: #fff;">資本金</h3>
+								<p>500万円​</p>
+							</div>
+						</div>
 
-							<div class="feature-box" data-animate="fadeIn" data-delay="200">
-								<div class="fbox-icon">
-									<a href="#"><i class="icon-users2"></i></a>
-								</div>
-								<div class="fbox-content">
-									<h3 style="color: #fff;">従業員数</h3>
-									<p>正社員6名<br>パート・アルバイト2名​</p>
+						<div class="feature-box mt-5" data-animate="fadeIn" data-delay="400">
+							<div class="fbox-icon">
+								<a href="#"><i class="icon-book-open"></i></a>
+							</div>
+							<div class="fbox-content">
+								<h3 style="color: #fff;">許可</h3>
+								<p>登録電気工事業者（一般用・自家用電気工作物）<br>【北海道知事登録（石狩）第20211088号​,登録支援機関【許可19登-0034469】​</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- Document Wrapper
+		============================================= -->
+		<div id="wrapper" class="clearfix">
+
+			<!-- Content
+			============================================= -->
+			<section id="content">
+				<div class="content-wrap min-vh-60 d-flex align-items-center">
+					<div class="container clearfix">
+
+						<div class="row justify-content-center gutter-50 col-mb-50">
+							<div class="clear"></div>
+
+							<div class="col-lg-12">
+								<div
+									class="row team team-list rounded-5 g-0 align-items-center shadow-sm border h-shadow h-translatey-sm all-ts rounded-4 overflow-hidden">
+									<div class="col-md-4 team-image col-sm-5 d-flex align-self-stretch">
+										<img style="width: 80% !important;" src="images/team/team-01.jpg"
+											alt="John Doe">
+									</div>
+									<div class="col-md-8 col-sm-7 p-4">
+										<div class="team-desc text-start">
+											<div class="team-title pt-0 mb-3">
+												<h4>エルデネバートル テルグーン</h4><span class="fst-normal">代表取締役</span>
+											</div>
+											<p class="mb-3">
+												弊社の社名「UNILEAD」にはよりよい状態へユニバースをリードするという思いが込められています。再生可能エネルギーと建設業を主軸におき、先端技術を用いて環境問題や人手不足解消に貢献しています。</br>「地球温暖化に伴う食糧問題を食い止める再エネ、それを創る建設技術、おいしい食糧を生産する北海道の大地、そこで活躍する人々」これらは夢のある物語の舞台となると考えています。</br>私たちは人を大切にし、人を磨き、人が活躍するフィールドを作り、先端技術とともに進展していくことで私たちにしかできないこととその可能性を信じて前進してまいります。</br>そしてお客様の期待以上の仕事・サービスを提供できるよう日々の努力を重ね、成長していきます。
+											</p>
+											<a href="#"
+												class="social-icon inline-block si-small si-colored si-rounded si-facebook">
+												<i class="icon-facebook"></i>
+												<i class="icon-facebook"></i>
+											</a>
+											<a href="#"
+												class="social-icon inline-block si-small si-colored si-rounded si-twitter">
+												<i class="icon-twitter"></i>
+												<i class="icon-twitter"></i>
+											</a>
+											<a href="#"
+												class="social-icon inline-block si-small si-colored si-rounded si-gplus">
+												<i class="icon-gplus"></i>
+												<i class="icon-gplus"></i>
+											</a>
+										</div>
+									</div>
 								</div>
 							</div>
+							<div class="clear"></div>
 
-							<div class="feature-box mt-5" data-animate="fadeIn" data-delay="400">
-								<div class="fbox-icon">
-									<a href="#"><i class="icon-birthday-cake"></i></a>
-								</div>
-								<div class="fbox-content">
-									<h3 style="color: #fff;">設立</h3>
-									<p>2018年11月16日​​​</p>
-								</div>
-							</div>
-							<div class="feature-box mt-5" data-animate="fadeIn" data-delay="600">
-								<div class="fbox-icon">
-									<a href="#"><i class="icon-money-bill-alt1"></i></a>
-								</div>
-								<div class="fbox-content">
-									<h3 style="color: #fff;">資本金</h3>
-									<p>500万円​</p>
-								</div>
-							</div>
+						</div>
+					</div>
+				</div>
+			</section><!-- #content end -->
 
-							<div class="feature-box mt-5" data-animate="fadeIn" data-delay="400">
-								<div class="fbox-icon">
-									<a href="#"><i class="icon-book-open"></i></a>
+			<!-- Content
+			============================================= -->
+			<div class="back-color">
+				<section>
+					<div class="section my-0">
+						<div class="container">
+
+							<div class="row mt-4 col-mb-50">
+
+								<h2 style="text-align: center; color: #FFF;">ＵＮＩＬＥＡＤの強み</h2>
+
+								<div class="col-lg-4">
+									<i class="i-plain color i-large icon-line2-screen-desktop inline-block"
+										style="margin-bottom: 15px;"></i>
+									<div class="heading-block border-bottom-0" style="margin-bottom: 15px;">
+										<!-- <span class="before-heading">ビジョン</span> -->
+										<h4 style="color: #FFF;">技術力</h4>
+									</div>
+									<p">熟練した技術者が施工管理する一般土木工事のみならず、チャレンジ精神が高い若い技術者が特技を発揮するi-constructionなど先端技術を利活用している。
+										</p>
 								</div>
-								<div class="fbox-content">
-									<h3 style="color: #fff;">許可</h3>
-									<p>登録電気工事業者（一般用・自家用電気工作物）<br>【北海道知事登録（石狩）第20211088号​,登録支援機関【許可19登-0034469】​</p>
+
+								<div class="col-lg-4">
+									<i class="i-plain color i-large icon-line2-energy inline-block"
+										style="margin-bottom: 15px;"></i>
+									<div class="heading-block border-bottom-0" style="margin-bottom: 15px;">
+										<!-- <span class="before-heading">ミッション</span> -->
+										<h4 style="color: #FFF;">経験値</h4>
+									</div>
+									<p>経験年数30年以上の技術者が在籍しており、日々​積み重ねた経験から成り立つ確かな信頼がＵＮＩＬＥＡＤの強みです。<br>弊社に在籍している技術者の資格等:
+									</p>
+									<div class="table-responsive">
+										<table class="table table-bordered mb-0">
+											<tbody>
+												<tr style="color: #999; font-size: x-small;">
+													<td>1級⼟⽊施⼯管理技⼠ 1名​</td>
+													<td>2級⼟⽊施⼯管理技⼠ 1名​</td>
+													<td>2級建築施⼯管理技⼠ 1名​</td>
+												</tr>
+												<tr style="color: #999; font-size: x-small;">
+													<td>第1種電気⼯事⼠ 1名​</td>
+													<td>第2種電気⼯事⼠ 1名​</td>
+													<td>ドローン操縦士 1名​​</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+
+								<div class="col-lg-4">
+									<i class="i-plain color i-large icon-line2-equalizer inline-block"
+										style="margin-bottom: 15px;"></i>
+									<div class="heading-block border-bottom-0" style="margin-bottom: 15px;">
+										<!-- <span class="before-heading">目標</span> -->
+										<h4 style="color: #FFF;">機動力</h4>
+									</div>
+									<p>ベテランはもちろん未来へ繋がる若手も多いのも特徴。技術者の平均年齢は36.1歳と業界の中でも若く、若いが上のフレッシュさと機動力により安定したスピード性があります。
+									</p>
 								</div>
 							</div>
 
 						</div>
+					</div>
+				</section><!-- #content end -->
+			</div>
+
+			<div class="container clearfix">
+
+				<div class="row justify-content-center col-mb-50">
+					<h2 style="text-align: center;">事業内容</h2>
+					<div class="col-sm-6 col-lg-4">
+						<div class="feature-box media-box">
+							<div class="fbox-media">
+								<img src="images/unilead/DJI_0053.JPG" alt="Why choose Us?">
+							</div>
+							<div class="fbox-content px-0">
+								<h3>i-construction支援 3DCAD・BIM・CIM</h3>
+								<p>建設業の生産性を向上のため、起工測量、3次元テータ作成、ICT建機による施工、3次元出来形管理、3次元データ納品、CIM、空中写真撮影・動画作成のサービスを提供し、i-constuctionで現場を支援します。
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-6 col-lg-4">
+						<div class="feature-box media-box">
+							<div class="fbox-media">
+								<img src="images/unilead/_VqCCbLE.jpeg" alt="Why choose Us?">
+							</div>
+							<div class="fbox-content px-0">
+								<h3>一般土木・建築工事請負事業.</h3>
+								<p>若手人材でお客様の建設現場を応援します。コンクリート基礎、型枠、鉄筋、小規模土木工事を請け負います。</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-6 col-lg-4">
+						<div class="feature-box media-box">
+							<div class="fbox-media">
+								<img src="images/unilead/DJI_0064.JPG" alt="Why choose Us?">
+							</div>
+							<div class="fbox-content px-0">
+								<h3>再生可能エネルギー事業</h3>
+								<p>太陽光発電所設計・施工・メンテナンスを一式請け負います。今までの経験と実績を活かし、高い品質の発電所を短期間で施工することでお客様のニーズにお応えします。</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-6 col-lg-4">
+						<div class="feature-box media-box">
+							<div class="fbox-media">
+								<img src="images/unilead/tokuteiginou.jpg" alt="Why choose Us?">
+							</div>
+							<div class="fbox-content px-0">
+								<h3>特定技能者支援業務</h3>
+								<p>初めて来日する人でも安心して仕事を続けられるように支援し、お客様の雇用の維持・拡大を努めます。優秀なモンゴル人材を紹介し、就労ビザ取得支援をおこないます。</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-6 col-lg-4">
+						<div class="feature-box media-box">
+							<div class="fbox-media">
+								<img src="images/unilead/w8FlxEIc.jpeg" alt="Why choose Us?">
+							</div>
+							<div class="fbox-content px-0">
+								<h3>貿易（販売及び輸出入）</h3>
+								<p>フェイスガードを製造、販売した経験に基づき、将来衣料品、日用雑貨、食料品の販売及び輸出入に向けて調査中です。</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="section m-0" style="padding-top: 0px !important;">
+				<div class="section footer-stick" style="margin-top: 0;">
+					<div style="background-color: #0A0A0A; padding: 30px;">
+						<h2 style="text-align: center; color: #FFF; margin-top: 0px !important;">サステナビリティ</h2>
+						<h2 style="text-align: center; color: #FFF;">SDGsへの取り組み</h2>
+					</div>
+					<h4 class="text-uppercase text-center" style="margin-top: 50px;">SDGsとは</h4>
+
+					<div class="fslider testimonial testimonial-full" data-animation="fade" data-arrows="false">
+						<!-- <div class="testi-image">
+						<a href="#"><img src="images/testimonials/3.jpg" alt="Customer Testimonails"></a>
+					</div> -->
+						<div>
+							<p>SDGsとは、２０１５年９月の国連サミットで採択された「持続可能な開発のための２０３０アジェンダ」に記載された２０１６年から２０３０年までの国際目標です。貧困や格差、気候変動などの世界の問題に人類全体が一丸となって取り組み、２０３０年までに解決を目指すものです。
+							</p>
+						</div>
+					</div>
+
+					<h4 class="text-uppercase text-center">UNILEADの取り組み</h4>
+
+					<div class="fslider testimonial testimonial-full" data-animation="fade" data-arrows="false">
+						<div>
+							<a href="#"><img src="images/unilead/OHNKqsnQ.jpg" alt="Customer Testimonails"></a>
+						</div>
+						<div>
+							<p>SDGsの１７の目標は企業努力で実現できる範囲を超えた目標もあり、当社が貢献しやすい分野から着手しています。当社は以下の６目標を重点として、活動を開始しています。UNILEADは社員にストレスをかけないため、ノルマや期限を重視していませんが、掲げた目標は時間がかかっても必ず達成しています。
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row justify-content-between">
+
+						<!-- Feature Box
+					============================================= -->
+						<div class="col-lg-6 col-md-6 mb-4">
+							<h4 class="mb-3">私たちの働き方</h4>
+							<p>私たちの働き方弊社において熟練技術者はもちろん、若手技術者も活躍しており、社員の平均年齢35.2歳であり、建設業、特に北海道の建設会社の中で僅少な若手人材を揃えた企業です。
+								深刻な人手不足が続く中で、外国人材の活用が必要不可欠になってきています。弊社では、外国人労働者は単純労働だけではなく、高度技術分野でも広く活躍しています。外国人が先端技術に携わり、活躍できることを示すことで、国内外の多くの若者たちに夢と希望を与えることとなります。ICT活用の狙いである人手不足への対処と施行経験者の育成などの目的に適っており、高度技術の習得により、母国の発展にも貢献することが期待されます。弊社はジェンダーの平等にも配慮しており、女性従業員は、電気工事、I-constructionに活躍・挑戦しています。
+							</p>
+							<div class="fbox-media">
+								<img src="images/unilead/OHNKqsnQ (1).jpg" alt="Why choose Us?">
+							</div>
+						</div>
+
+						<!-- Feature Box
+					============================================= -->
+						<div class="col-lg-6 col-md-6 mb-4">
+							<h4 class="mb-3">再生可能エネルギー・i-construction</h4>
+							<p>環境にやさしいクリーンなエネルギーである太陽光発電所の建設を推進しており、総容量8,486.6kWの34ヵ所の太陽光発電所を施工しました。建設業は、作業員個人の技量や経験などに頼る部分が多い労働集約型の業界です。若い世代の入職者が減少し、熟練技術者の高齢化も課題となっています。建設業は、就労環境が3K（きつい、汚い、危険）のイメージが浸透しています。建設技能者数は、現在60歳以上が81万人、30歳未満が36万人となっており、10年後には深刻な労働力不足が見込まれます。人口の減少や高齢化が進む中にあっても、これからの役割を果たすため、建設業の生産性向上が求められているところです。国土交通省は、調査・測量から設計、施工、検査、維持管理・更新までの全ての建設プロセスにi-constructionの活用を推進し、建設現場の生産性を2025年度までに2割向上する目標を掲げています。弊社の活動は、これらの社会的要請に応えうるものとなっています。
+							</p>
+							<div class="fbox-media">
+								<img src="images/unilead/OHNKqsnQ (2).jpg" alt="Why choose Us?">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="section footer-stick" style="margin-top: 0px;">
+
+					<h4 class="text-uppercase text-center">環境への取り組み</h4>
+
+					<div class="fslider testimonial testimonial-full" data-animation="fade" data-arrows="false">
+						<div>
+							<a href="#"><img src="images/unilead/OHNKqsnQ (3).jpg" alt="Customer Testimonails"></a>
+						</div>
+						<div>
+							<p>弊社の施工した太陽光発電所31ヵ所は、年間/月間〇〇kWhの電気を発電している。これは、〇〇トン/kgのCO₂の排出を削減した。</p>
+						</div>
+					</div>
+
+					<h4 class="text-uppercase text-center">社会への取り組み</h4>
+
+					<div class="fslider testimonial testimonial-full" data-animation="fade" data-arrows="false">
+						<div>
+							<p>新型コロナウィルスの感染拡大防止に少しでも役に立てればと思い、近隣の小中高等学校に弊社が製造しているフェイスシールドを寄付させていただきました。一人ひとりの感染拡大防止に努力することはもちろん、弊社としても地域の一員としてできることで応援していきたいです。
+							</p>
+						</div>
+						<div>
+							<a href="#"><img src="images/unilead/w8FlxEIc.jpeg" alt="Customer Testimonails"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- <section id="content">
+				<div class="content-wrap">
+					<div class="container">
+						<div style="text-align: center;">
+							<h2>SDGsへの取り組み</h2>
+						</div>
+						<div class="row feature-box-border-vertical border-hover-animate col-mb-50 justify-content-center align-items-center my-5">
+							<div class="col-md-6 feature-box fbox-dark">
+								<div class="fbox-icon bg-white">
+									<a href="#"><i>1</i></a>
+								</div>
+								<div class="fbox-content">
+									<h3 class="nott text-larger mb-2">SDGsとは</h3>
+									<p>SDGsとは、２０１５年９月の国連サミットで採択された「持続可能な開発のための２０３０アジェンダ」に記載された２０１６年から２０３０年までの国際目標です。貧困や格差、気候変動などの世界の問題に人類全体が一丸となって取り組み、２０３０年までに解決を目指すものです。</p>
+								</div>
+							</div>
+
+							<div class="clear"></div>
+
+							<div class="col-md-6 feature-box fbox-border fbox-light fbox-effect">
+								<div class="fbox-icon bg-white">
+									<a href="#"><i>2</i></a>
+								</div>
+								<div class="fbox-content">
+									<h3 class="nott text-larger mb-2">UNILEADの取り組み</h3>
+									<p>SDGsの１７の目標は企業努力で実現できる範囲を超えた目標もあり、当社が貢献しやすい分野から着手しています。当社は以下の６目標を重点として、活動を開始しています。UNILEADは社員にストレスをかけないため、ノルマや期限を重視していませんが、掲げた目標は時間がかかっても必ず達成しています。</p>
+								</div>
+							</div>
+
+							<div class="clear"></div>
+
+							<div class="col-md-6 feature-box fbox-border fbox-light fbox-effect">
+								<div class="fbox-icon bg-white">
+									<a href="#"><i>3</i></a>
+								</div>
+								<div class="fbox-content">
+									<h3 class="nott text-larger mb-2">私たちの働き方</h3>
+									<p>私たちの働き方弊社において熟練技術者はもちろん、若手技術者も活躍しており、社員の平均年齢35.2歳であり、建設業、特に北海道の建設会社の中で僅少な若手人材を揃えた企業です。</br>深刻な人手不足が続く中で、外国人材の活用が必要不可欠になってきています。弊社では、外国人労働者は単純労働だけではなく、高度技術分野でも広く活躍しています。外国人が先端技術に携わり、活躍できることを示すことで、国内外の多くの若者たちに夢と希望を与えることとなります。ICT活用の狙いである人手不足への対処と施行経験者の育成などの目的に適っており、高度技術の習得により、母国の発展にも貢献することが期待されます。弊社はジェンダーの平等にも配慮しており、女性従業員は、電気工事、I-constructionに活躍・挑戦しています。</p>
+								</div>
+							</div>
+
+							<div class="clear"></div>
+
+							<div class="col-md-6 feature-box fbox-border fbox-light fbox-effect">
+								<div class="fbox-icon bg-white">
+									<a href="#"><i>4</i></a>
+								</div>
+								<div class="fbox-content">
+									<h3 class="nott text-larger mb-2">再生可能エネルギー・i-construction</h3>
+									<p>再生可能エネルギー・i-construction
+										　環境にやさしいクリーンなエネルギーである太陽光発電所の建設を推進しており、総容量8,486.6kWの34ヵ所の太陽光発電所を施工しました。</br>
+										　建設業は、作業員個人の技量や経験などに頼る部分が多い労働集約型の業界です。若い世代の入職者が減少し、熟練技術者の高齢化も課題となっています。建設業は、就労環境が3K（きつい、汚い、危険）のイメージが浸透しています。建設技能者数は、現在60歳以上が81万人、30歳未満が36万人となっており、10年後には深刻な労働力不足が見込まれます。</br>
+										　人口の減少や高齢化が進む中にあっても、これからの役割を果たすため、建設業の生産性向上が求められているところです。国土交通省は、調査・測量から設計、施工、検査、維持管理・更新までの全ての建設プロセスにi-constructionの活用を推進し、建設現場の生産性を2025年度までに2割向上する目標を掲げています。弊社の活動は、これらの社会的要請に応えうるものとなっています。
+										</p>
+								</div>
+							</div>
+
+							<div class="clear"></div>
+
+							<div class="col-md-6 feature-box fbox-border fbox-light fbox-effect">
+								<div class="fbox-icon bg-white">
+									<a href="#"><i>5</i></a>
+								</div>
+								<div class="fbox-content">
+									<h3 class="nott text-larger mb-2">環境への取り組み</h3>
+									<p>弊社の施工した太陽光発電所31ヵ所は、年間/月間〇〇kWhの電気を発電している。これは、〇〇トン/kgのCO₂の排出を削減した。</p>
+								</div>
+							</div>
+
+							<div class="clear"></div>
+
+							<div class="col-md-6 feature-box fbox-border fbox-light fbox-effect noborder">
+								<div class="fbox-icon bg-white">
+									<a href="#"><i>6</i></a>
+								</div>
+								<div class="fbox-content">
+									<h3 class="nott text-larger mb-2">社会への取り組み</h3>
+									<p>新型コロナウィルスの感染拡大防止に少しでも役に立てればと思い、近隣の小中高等学校に弊社が製造しているフェイスシールドを寄付させていただきました。一人ひとりの感染拡大防止に努力することはもちろん、弊社としても地域の一員としてできることで応援していきたいです。</p>
+								</div>
+							</div>
+					</div>
+				</div>
+			</section> -->
+
+			<div class="section">
+				<div class="container clearfix">
+
+					<div class="heading-block topmargin-sm center">
+						<h3>チームメンバー</h3>
+					</div>
+
+					<div class="row">
+
+						<div class="col-lg-3 col-md-6 bottommargin">
+
+							<div class="team">
+								<div class="team-image">
+									<img src="images/team/team-01.jpg" alt="John Doe">
+								</div>
+								<div class="team-desc team-desc-bg">
+									<div class="team-title">
+										<h4>John Doe</h4><span>CEO</span>
+									</div>
+									<a href="#"
+										class="social-icon inline-block si-small si-light si-rounded si-facebook">
+										<i class="icon-facebook"></i>
+										<i class="icon-facebook"></i>
+									</a>
+									<a href="#"
+										class="social-icon inline-block si-small si-light si-rounded si-twitter">
+										<i class="icon-twitter"></i>
+										<i class="icon-twitter"></i>
+									</a>
+									<a href="#" class="social-icon inline-block si-small si-light si-rounded si-gplus">
+										<i class="icon-gplus"></i>
+										<i class="icon-gplus"></i>
+									</a>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="col-lg-3 col-md-6 bottommargin">
+
+							<div class="team">
+								<div class="team-image">
+									<img src="images/team/team-02.jpg" alt="Josh Clark">
+								</div>
+								<div class="team-desc team-desc-bg">
+									<div class="team-title">
+										<h4>Josh Clark</h4><span>Co-Founder</span>
+									</div>
+									<a href="#"
+										class="social-icon inline-block si-small si-light si-rounded si-facebook">
+										<i class="icon-facebook"></i>
+										<i class="icon-facebook"></i>
+									</a>
+									<a href="#"
+										class="social-icon inline-block si-small si-light si-rounded si-twitter">
+										<i class="icon-twitter"></i>
+										<i class="icon-twitter"></i>
+									</a>
+									<a href="#" class="social-icon inline-block si-small si-light si-rounded si-gplus">
+										<i class="icon-gplus"></i>
+										<i class="icon-gplus"></i>
+									</a>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="col-lg-3 col-md-6 bottommargin">
+
+							<div class="team">
+								<div class="team-image">
+									<img src="images/team/team-01.jpg" alt="Mary Jane">
+								</div>
+								<div class="team-desc team-desc-bg">
+									<div class="team-title">
+										<h4>Mary Jane</h4><span>Sales</span>
+									</div>
+									<a href="#"
+										class="social-icon inline-block si-small si-light si-rounded si-facebook">
+										<i class="icon-facebook"></i>
+										<i class="icon-facebook"></i>
+									</a>
+									<a href="#"
+										class="social-icon inline-block si-small si-light si-rounded si-twitter">
+										<i class="icon-twitter"></i>
+										<i class="icon-twitter"></i>
+									</a>
+									<a href="#" class="social-icon inline-block si-small si-light si-rounded si-gplus">
+										<i class="icon-gplus"></i>
+										<i class="icon-gplus"></i>
+									</a>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="col-lg-3 col-md-6 bottommargin">
+
+							<div class="team">
+								<div class="team-image">
+									<img src="images/team/team-02.jpg" alt="Nix Maxwell">
+								</div>
+								<div class="team-desc team-desc-bg">
+									<div class="team-title">
+										<h4>Nix Maxwell</h4><span>Support</span>
+									</div>
+									<a href="#"
+										class="social-icon inline-block si-small si-light si-rounded si-facebook">
+										<i class="icon-facebook"></i>
+										<i class="icon-facebook"></i>
+									</a>
+									<a href="#"
+										class="social-icon inline-block si-small si-light si-rounded si-twitter">
+										<i class="icon-twitter"></i>
+										<i class="icon-twitter"></i>
+									</a>
+									<a href="#" class="social-icon inline-block si-small si-light si-rounded si-gplus">
+										<i class="icon-gplus"></i>
+										<i class="icon-gplus"></i>
+									</a>
+								</div>
+							</div>
+
+						</div>
+
 					</div>
 
 				</div>
@@ -529,558 +1026,68 @@
 			<!-- Document Wrapper
 			============================================= -->
 			<div id="wrapper" class="clearfix">
-
-				<!-- Content
-				============================================= -->
-				<section id="content">
-					<div class="content-wrap min-vh-60 d-flex align-items-center">
-						<div class="container clearfix">
-
-							<div class="row justify-content-center gutter-50 col-mb-50">
-								<div class="clear"></div>
-
-								<div class="col-lg-12">
-									<div
-										class="row team team-list rounded-5 g-0 align-items-center shadow-sm border h-shadow h-translatey-sm all-ts rounded-4 overflow-hidden">
-										<div class="col-md-4 team-image col-sm-5 d-flex align-self-stretch">
-											<img style="width: 80% !important;" src="images/team/team-01.jpg"
-												alt="John Doe">
-										</div>
-										<div class="col-md-8 col-sm-7 p-4">
-											<div class="team-desc text-start">
-												<div class="team-title pt-0 mb-3">
-													<h4>エルデネバートル テルグーン</h4><span class="fst-normal">代表取締役</span>
-												</div>
-												<p class="mb-3">
-													弊社の社名「UNILEAD」にはよりよい状態へユニバースをリードするという思いが込められています。再生可能エネルギーと建設業を主軸におき、先端技術を用いて環境問題や人手不足解消に貢献しています。</br>「地球温暖化に伴う食糧問題を食い止める再エネ、それを創る建設技術、おいしい食糧を生産する北海道の大地、そこで活躍する人々」これらは夢のある物語の舞台となると考えています。</br>私たちは人を大切にし、人を磨き、人が活躍するフィールドを作り、先端技術とともに進展していくことで私たちにしかできないこととその可能性を信じて前進してまいります。</br>そしてお客様の期待以上の仕事・サービスを提供できるよう日々の努力を重ね、成長していきます。
-												</p>
-												<a href="#"
-													class="social-icon inline-block si-small si-colored si-rounded si-facebook">
-													<i class="icon-facebook"></i>
-													<i class="icon-facebook"></i>
-												</a>
-												<a href="#"
-													class="social-icon inline-block si-small si-colored si-rounded si-twitter">
-													<i class="icon-twitter"></i>
-													<i class="icon-twitter"></i>
-												</a>
-												<a href="#"
-													class="social-icon inline-block si-small si-colored si-rounded si-gplus">
-													<i class="icon-gplus"></i>
-													<i class="icon-gplus"></i>
-												</a>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="clear"></div>
-
-							</div>
-						</div>
-					</div>
-				</section><!-- #content end -->
-
-				<!-- Content
-				============================================= -->
-				<div class="back-color">
-					<section>
-						<div class="section my-0">
-							<div class="container">
-
-								<div class="row mt-4 col-mb-50">
-
-									<h2 style="text-align: center; color: #FFF;">ＵＮＩＬＥＡＤの強み</h2>
-
-									<div class="col-lg-4">
-										<i class="i-plain color i-large icon-line2-screen-desktop inline-block"
-											style="margin-bottom: 15px;"></i>
-										<div class="heading-block border-bottom-0" style="margin-bottom: 15px;">
-											<!-- <span class="before-heading">ビジョン</span> -->
-											<h4 style="color: #FFF;">技術力</h4>
-										</div>
-										<p">熟練した技術者が施工管理する一般土木工事のみならず、チャレンジ精神が高い若い技術者が特技を発揮するi-constructionなど先端技術を利活用している。
-											</p>
-									</div>
-
-									<div class="col-lg-4">
-										<i class="i-plain color i-large icon-line2-energy inline-block"
-											style="margin-bottom: 15px;"></i>
-										<div class="heading-block border-bottom-0" style="margin-bottom: 15px;">
-											<!-- <span class="before-heading">ミッション</span> -->
-											<h4 style="color: #FFF;">経験値</h4>
-										</div>
-										<p>経験年数30年以上の技術者が在籍しており、日々​積み重ねた経験から成り立つ確かな信頼がＵＮＩＬＥＡＤの強みです。<br>弊社に在籍している技術者の資格等:
-										</p>
-										<div class="table-responsive">
-											<table class="table table-bordered mb-0">
-												<tbody>
-													<tr style="color: #999; font-size: x-small;">
-														<td>1級⼟⽊施⼯管理技⼠ 1名​</td>
-														<td>2級⼟⽊施⼯管理技⼠ 1名​</td>
-														<td>2級建築施⼯管理技⼠ 1名​</td>
-													</tr>
-													<tr style="color: #999; font-size: x-small;">
-														<td>第1種電気⼯事⼠ 1名​</td>
-														<td>第2種電気⼯事⼠ 1名​</td>
-														<td>ドローン操縦士 1名​​</td>
-													</tr>
-												</tbody>
-											</table>
-										</div>
-									</div>
-
-									<div class="col-lg-4">
-										<i class="i-plain color i-large icon-line2-equalizer inline-block"
-											style="margin-bottom: 15px;"></i>
-										<div class="heading-block border-bottom-0" style="margin-bottom: 15px;">
-											<!-- <span class="before-heading">目標</span> -->
-											<h4 style="color: #FFF;">機動力</h4>
-										</div>
-										<p>ベテランはもちろん未来へ繋がる若手も多いのも特徴。技術者の平均年齢は36.1歳と業界の中でも若く、若いが上のフレッシュさと機動力により安定したスピード性があります。
-										</p>
-									</div>
-								</div>
-
-							</div>
-						</div>
-					</section><!-- #content end -->
-				</div>
-
-				<div class="container clearfix">
-
-					<div class="row justify-content-center col-mb-50">
-						<h2 style="text-align: center;">事業内容</h2>
-						<div class="col-sm-6 col-lg-4">
-							<div class="feature-box media-box">
-								<div class="fbox-media">
-									<img src="images/unilead/DJI_0053.JPG" alt="Why choose Us?">
-								</div>
-								<div class="fbox-content px-0">
-									<h3>i-construction支援 3DCAD・BIM・CIM</h3>
-									<p>建設業の生産性を向上のため、起工測量、3次元テータ作成、ICT建機による施工、3次元出来形管理、3次元データ納品、CIM、空中写真撮影・動画作成のサービスを提供し、i-constuctionで現場を支援します。
-									</p>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-sm-6 col-lg-4">
-							<div class="feature-box media-box">
-								<div class="fbox-media">
-									<img src="images/unilead/_VqCCbLE.jpeg" alt="Why choose Us?">
-								</div>
-								<div class="fbox-content px-0">
-									<h3>一般土木・建築工事請負事業.</h3>
-									<p>若手人材でお客様の建設現場を応援します。コンクリート基礎、型枠、鉄筋、小規模土木工事を請け負います。</p>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-sm-6 col-lg-4">
-							<div class="feature-box media-box">
-								<div class="fbox-media">
-									<img src="images/unilead/DJI_0064.JPG" alt="Why choose Us?">
-								</div>
-								<div class="fbox-content px-0">
-									<h3>再生可能エネルギー事業</h3>
-									<p>太陽光発電所設計・施工・メンテナンスを一式請け負います。今までの経験と実績を活かし、高い品質の発電所を短期間で施工することでお客様のニーズにお応えします。</p>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-sm-6 col-lg-4">
-							<div class="feature-box media-box">
-								<div class="fbox-media">
-									<img src="images/unilead/tokuteiginou.jpg" alt="Why choose Us?">
-								</div>
-								<div class="fbox-content px-0">
-									<h3>特定技能者支援業務</h3>
-									<p>初めて来日する人でも安心して仕事を続けられるように支援し、お客様の雇用の維持・拡大を努めます。優秀なモンゴル人材を紹介し、就労ビザ取得支援をおこないます。</p>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-sm-6 col-lg-4">
-							<div class="feature-box media-box">
-								<div class="fbox-media">
-									<img src="images/unilead/w8FlxEIc.jpeg" alt="Why choose Us?">
-								</div>
-								<div class="fbox-content px-0">
-									<h3>貿易（販売及び輸出入）</h3>
-									<p>フェイスガードを製造、販売した経験に基づき、将来衣料品、日用雑貨、食料品の販売及び輸出入に向けて調査中です。</p>
-								</div>
-							</div>
-						</div>
-					</div>
-
-				</div>
-
-				<div class="section m-0" style="padding-top: 0px !important;">
-					<div class="section footer-stick" style="margin-top: 0;">
-						<div style="background-color: #0A0A0A; padding: 30px;">
-							<h2 style="text-align: center; color: #FFF; margin-top: 0px !important;">サステナビリティ</h2>
-							<h2 style="text-align: center; color: #FFF;">SDGsへの取り組み</h2>
-						</div>
-						<h4 class="text-uppercase text-center" style="margin-top: 50px;">SDGsとは</h4>
-
-						<div class="fslider testimonial testimonial-full" data-animation="fade" data-arrows="false">
-							<!-- <div class="testi-image">
-							<a href="#"><img src="images/testimonials/3.jpg" alt="Customer Testimonails"></a>
-						</div> -->
-							<div>
-								<p>SDGsとは、２０１５年９月の国連サミットで採択された「持続可能な開発のための２０３０アジェンダ」に記載された２０１６年から２０３０年までの国際目標です。貧困や格差、気候変動などの世界の問題に人類全体が一丸となって取り組み、２０３０年までに解決を目指すものです。
-								</p>
-							</div>
-						</div>
-
-						<h4 class="text-uppercase text-center">UNILEADの取り組み</h4>
-
-						<div class="fslider testimonial testimonial-full" data-animation="fade" data-arrows="false">
-							<div>
-								<a href="#"><img src="images/unilead/OHNKqsnQ.jpg" alt="Customer Testimonails"></a>
-							</div>
-							<div>
-								<p>SDGsの１７の目標は企業努力で実現できる範囲を超えた目標もあり、当社が貢献しやすい分野から着手しています。当社は以下の６目標を重点として、活動を開始しています。UNILEADは社員にストレスをかけないため、ノルマや期限を重視していませんが、掲げた目標は時間がかかっても必ず達成しています。
-								</p>
-							</div>
-						</div>
-					</div>
-					<div class="container">
-						<div class="row justify-content-between">
-
-							<!-- Feature Box
-						============================================= -->
-							<div class="col-lg-6 col-md-6 mb-4">
-								<h4 class="mb-3">私たちの働き方</h4>
-								<p>私たちの働き方弊社において熟練技術者はもちろん、若手技術者も活躍しており、社員の平均年齢35.2歳であり、建設業、特に北海道の建設会社の中で僅少な若手人材を揃えた企業です。
-									深刻な人手不足が続く中で、外国人材の活用が必要不可欠になってきています。弊社では、外国人労働者は単純労働だけではなく、高度技術分野でも広く活躍しています。外国人が先端技術に携わり、活躍できることを示すことで、国内外の多くの若者たちに夢と希望を与えることとなります。ICT活用の狙いである人手不足への対処と施行経験者の育成などの目的に適っており、高度技術の習得により、母国の発展にも貢献することが期待されます。弊社はジェンダーの平等にも配慮しており、女性従業員は、電気工事、I-constructionに活躍・挑戦しています。
-								</p>
-								<div class="fbox-media">
-									<img src="images/unilead/OHNKqsnQ (1).jpg" alt="Why choose Us?">
-								</div>
-							</div>
-
-							<!-- Feature Box
-						============================================= -->
-							<div class="col-lg-6 col-md-6 mb-4">
-								<h4 class="mb-3">再生可能エネルギー・i-construction</h4>
-								<p>環境にやさしいクリーンなエネルギーである太陽光発電所の建設を推進しており、総容量8,486.6kWの34ヵ所の太陽光発電所を施工しました。建設業は、作業員個人の技量や経験などに頼る部分が多い労働集約型の業界です。若い世代の入職者が減少し、熟練技術者の高齢化も課題となっています。建設業は、就労環境が3K（きつい、汚い、危険）のイメージが浸透しています。建設技能者数は、現在60歳以上が81万人、30歳未満が36万人となっており、10年後には深刻な労働力不足が見込まれます。人口の減少や高齢化が進む中にあっても、これからの役割を果たすため、建設業の生産性向上が求められているところです。国土交通省は、調査・測量から設計、施工、検査、維持管理・更新までの全ての建設プロセスにi-constructionの活用を推進し、建設現場の生産性を2025年度までに2割向上する目標を掲げています。弊社の活動は、これらの社会的要請に応えうるものとなっています。
-								</p>
-								<div class="fbox-media">
-									<img src="images/unilead/OHNKqsnQ (2).jpg" alt="Why choose Us?">
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="section footer-stick" style="margin-top: 0px;">
-
-						<h4 class="text-uppercase text-center">環境への取り組み</h4>
-
-						<div class="fslider testimonial testimonial-full" data-animation="fade" data-arrows="false">
-							<div>
-								<a href="#"><img src="images/unilead/OHNKqsnQ (3).jpg" alt="Customer Testimonails"></a>
-							</div>
-							<div>
-								<p>弊社の施工した太陽光発電所31ヵ所は、年間/月間〇〇kWhの電気を発電している。これは、〇〇トン/kgのCO₂の排出を削減した。</p>
-							</div>
-						</div>
-
-						<h4 class="text-uppercase text-center">社会への取り組み</h4>
-
-						<div class="fslider testimonial testimonial-full" data-animation="fade" data-arrows="false">
-							<div>
-								<p>新型コロナウィルスの感染拡大防止に少しでも役に立てればと思い、近隣の小中高等学校に弊社が製造しているフェイスシールドを寄付させていただきました。一人ひとりの感染拡大防止に努力することはもちろん、弊社としても地域の一員としてできることで応援していきたいです。
-								</p>
-							</div>
-							<div>
-								<a href="#"><img src="images/unilead/w8FlxEIc.jpeg" alt="Customer Testimonails"></a>
-							</div>
-						</div>
-					</div>
-				</div>
-
 				<!-- <section id="content">
-					<div class="content-wrap">
-						<div class="container">
-							<div style="text-align: center;">
-								<h2>SDGsへの取り組み</h2>
+				<div class="content-wrap">
+
+					<div class="container">
+
+						<h2 class="text-center">写真</h2>
+						<div class="block-expand-categories flex-column flex-lg-row d-flex justify-content-center">
+							<div class="expand-category bg-light" style="background-image: url('images/blocks/preview/exp-cards/1.jpeg');">
+								<h4><a href="#" class="text-light">フェイスシールド</a></h4>
 							</div>
-							<div class="row feature-box-border-vertical border-hover-animate col-mb-50 justify-content-center align-items-center my-5">
-								<div class="col-md-6 feature-box fbox-dark">
-									<div class="fbox-icon bg-white">
-										<a href="#"><i>1</i></a>
-									</div>
-									<div class="fbox-content">
-										<h3 class="nott text-larger mb-2">SDGsとは</h3>
-										<p>SDGsとは、２０１５年９月の国連サミットで採択された「持続可能な開発のための２０３０アジェンダ」に記載された２０１６年から２０３０年までの国際目標です。貧困や格差、気候変動などの世界の問題に人類全体が一丸となって取り組み、２０３０年までに解決を目指すものです。</p>
-									</div>
-								</div>
 
-								<div class="clear"></div>
+							<div class="expand-category bg-light" style="background-image: url('images/blocks/preview/exp-cards/2.jpeg');">
+								<h4><a href="#" class="text-light">フェイスシールド</a></h4>
+							</div>
 
-								<div class="col-md-6 feature-box fbox-border fbox-light fbox-effect">
-									<div class="fbox-icon bg-white">
-										<a href="#"><i>2</i></a>
-									</div>
-									<div class="fbox-content">
-										<h3 class="nott text-larger mb-2">UNILEADの取り組み</h3>
-										<p>SDGsの１７の目標は企業努力で実現できる範囲を超えた目標もあり、当社が貢献しやすい分野から着手しています。当社は以下の６目標を重点として、活動を開始しています。UNILEADは社員にストレスをかけないため、ノルマや期限を重視していませんが、掲げた目標は時間がかかっても必ず達成しています。</p>
-									</div>
-								</div>
+							<div class="expand-category bg-light" style="background-image: url('images/blocks/preview/exp-cards/3.jpeg');">
+								<h4><a href="#" class="text-light">フェイスシールド</a></h4>
+							</div>
 
-								<div class="clear"></div>
+							<div class="expand-category bg-light" style="background-image: url('images/blocks/preview/exp-cards/4.jpg');">
+								<h4><a href="#" class="text-light">Desserts</a></h4>
+							</div>
 
-								<div class="col-md-6 feature-box fbox-border fbox-light fbox-effect">
-									<div class="fbox-icon bg-white">
-										<a href="#"><i>3</i></a>
-									</div>
-									<div class="fbox-content">
-										<h3 class="nott text-larger mb-2">私たちの働き方</h3>
-										<p>私たちの働き方弊社において熟練技術者はもちろん、若手技術者も活躍しており、社員の平均年齢35.2歳であり、建設業、特に北海道の建設会社の中で僅少な若手人材を揃えた企業です。</br>深刻な人手不足が続く中で、外国人材の活用が必要不可欠になってきています。弊社では、外国人労働者は単純労働だけではなく、高度技術分野でも広く活躍しています。外国人が先端技術に携わり、活躍できることを示すことで、国内外の多くの若者たちに夢と希望を与えることとなります。ICT活用の狙いである人手不足への対処と施行経験者の育成などの目的に適っており、高度技術の習得により、母国の発展にも貢献することが期待されます。弊社はジェンダーの平等にも配慮しており、女性従業員は、電気工事、I-constructionに活躍・挑戦しています。</p>
-									</div>
-								</div>
+							<div class="expand-category bg-light" style="background-image: url('images/blocks/preview/exp-cards/5.jpg');">
+								<h4><a href="#" class="text-light">Vegan</a></h4>
+							</div>
 
-								<div class="clear"></div>
+							<div class="expand-category bg-light" style="background-image: url('images/blocks/preview/exp-cards/6.jpg');">
+								<h4><a href="#" class="text-light">Seafood</a></h4>
+							</div>
 
-								<div class="col-md-6 feature-box fbox-border fbox-light fbox-effect">
-									<div class="fbox-icon bg-white">
-										<a href="#"><i>4</i></a>
-									</div>
-									<div class="fbox-content">
-										<h3 class="nott text-larger mb-2">再生可能エネルギー・i-construction</h3>
-										<p>再生可能エネルギー・i-construction
-											　環境にやさしいクリーンなエネルギーである太陽光発電所の建設を推進しており、総容量8,486.6kWの34ヵ所の太陽光発電所を施工しました。</br>
-											　建設業は、作業員個人の技量や経験などに頼る部分が多い労働集約型の業界です。若い世代の入職者が減少し、熟練技術者の高齢化も課題となっています。建設業は、就労環境が3K（きつい、汚い、危険）のイメージが浸透しています。建設技能者数は、現在60歳以上が81万人、30歳未満が36万人となっており、10年後には深刻な労働力不足が見込まれます。</br>
-											　人口の減少や高齢化が進む中にあっても、これからの役割を果たすため、建設業の生産性向上が求められているところです。国土交通省は、調査・測量から設計、施工、検査、維持管理・更新までの全ての建設プロセスにi-constructionの活用を推進し、建設現場の生産性を2025年度までに2割向上する目標を掲げています。弊社の活動は、これらの社会的要請に応えうるものとなっています。
-											</p>
-									</div>
-								</div>
-
-								<div class="clear"></div>
-
-								<div class="col-md-6 feature-box fbox-border fbox-light fbox-effect">
-									<div class="fbox-icon bg-white">
-										<a href="#"><i>5</i></a>
-									</div>
-									<div class="fbox-content">
-										<h3 class="nott text-larger mb-2">環境への取り組み</h3>
-										<p>弊社の施工した太陽光発電所31ヵ所は、年間/月間〇〇kWhの電気を発電している。これは、〇〇トン/kgのCO₂の排出を削減した。</p>
-									</div>
-								</div>
-
-								<div class="clear"></div>
-
-								<div class="col-md-6 feature-box fbox-border fbox-light fbox-effect noborder">
-									<div class="fbox-icon bg-white">
-										<a href="#"><i>6</i></a>
-									</div>
-									<div class="fbox-content">
-										<h3 class="nott text-larger mb-2">社会への取り組み</h3>
-										<p>新型コロナウィルスの感染拡大防止に少しでも役に立てればと思い、近隣の小中高等学校に弊社が製造しているフェイスシールドを寄付させていただきました。一人ひとりの感染拡大防止に努力することはもちろん、弊社としても地域の一員としてできることで応援していきたいです。</p>
-									</div>
-								</div>
+							<div class="expand-category bg-light" style="background-image: url('images/blocks/preview/exp-cards/7.jpg');">
+								<h4><a href="#" class="text-light">Beverages</a></h4>
+							</div>
 						</div>
+
+						<div class="line"></div>
 					</div>
-				</section> -->
-
-				<div class="section">
-					<div class="container clearfix">
-
-						<div class="heading-block topmargin-sm center">
-							<h3>チームメンバー</h3>
-						</div>
-
-						<div class="row">
-
-							<div class="col-lg-3 col-md-6 bottommargin">
-
-								<div class="team">
-									<div class="team-image">
-										<img src="images/team/team-01.jpg" alt="John Doe">
-									</div>
-									<div class="team-desc team-desc-bg">
-										<div class="team-title">
-											<h4>John Doe</h4><span>CEO</span>
-										</div>
-										<a href="#"
-											class="social-icon inline-block si-small si-light si-rounded si-facebook">
-											<i class="icon-facebook"></i>
-											<i class="icon-facebook"></i>
-										</a>
-										<a href="#"
-											class="social-icon inline-block si-small si-light si-rounded si-twitter">
-											<i class="icon-twitter"></i>
-											<i class="icon-twitter"></i>
-										</a>
-										<a href="#"
-											class="social-icon inline-block si-small si-light si-rounded si-gplus">
-											<i class="icon-gplus"></i>
-											<i class="icon-gplus"></i>
-										</a>
-									</div>
-								</div>
-
-							</div>
-
-							<div class="col-lg-3 col-md-6 bottommargin">
-
-								<div class="team">
-									<div class="team-image">
-										<img src="images/team/team-02.jpg" alt="Josh Clark">
-									</div>
-									<div class="team-desc team-desc-bg">
-										<div class="team-title">
-											<h4>Josh Clark</h4><span>Co-Founder</span>
-										</div>
-										<a href="#"
-											class="social-icon inline-block si-small si-light si-rounded si-facebook">
-											<i class="icon-facebook"></i>
-											<i class="icon-facebook"></i>
-										</a>
-										<a href="#"
-											class="social-icon inline-block si-small si-light si-rounded si-twitter">
-											<i class="icon-twitter"></i>
-											<i class="icon-twitter"></i>
-										</a>
-										<a href="#"
-											class="social-icon inline-block si-small si-light si-rounded si-gplus">
-											<i class="icon-gplus"></i>
-											<i class="icon-gplus"></i>
-										</a>
-									</div>
-								</div>
-
-							</div>
-
-							<div class="col-lg-3 col-md-6 bottommargin">
-
-								<div class="team">
-									<div class="team-image">
-										<img src="images/team/team-01.jpg" alt="Mary Jane">
-									</div>
-									<div class="team-desc team-desc-bg">
-										<div class="team-title">
-											<h4>Mary Jane</h4><span>Sales</span>
-										</div>
-										<a href="#"
-											class="social-icon inline-block si-small si-light si-rounded si-facebook">
-											<i class="icon-facebook"></i>
-											<i class="icon-facebook"></i>
-										</a>
-										<a href="#"
-											class="social-icon inline-block si-small si-light si-rounded si-twitter">
-											<i class="icon-twitter"></i>
-											<i class="icon-twitter"></i>
-										</a>
-										<a href="#"
-											class="social-icon inline-block si-small si-light si-rounded si-gplus">
-											<i class="icon-gplus"></i>
-											<i class="icon-gplus"></i>
-										</a>
-									</div>
-								</div>
-
-							</div>
-
-							<div class="col-lg-3 col-md-6 bottommargin">
-
-								<div class="team">
-									<div class="team-image">
-										<img src="images/team/team-02.jpg" alt="Nix Maxwell">
-									</div>
-									<div class="team-desc team-desc-bg">
-										<div class="team-title">
-											<h4>Nix Maxwell</h4><span>Support</span>
-										</div>
-										<a href="#"
-											class="social-icon inline-block si-small si-light si-rounded si-facebook">
-											<i class="icon-facebook"></i>
-											<i class="icon-facebook"></i>
-										</a>
-										<a href="#"
-											class="social-icon inline-block si-small si-light si-rounded si-twitter">
-											<i class="icon-twitter"></i>
-											<i class="icon-twitter"></i>
-										</a>
-										<a href="#"
-											class="social-icon inline-block si-small si-light si-rounded si-gplus">
-											<i class="icon-gplus"></i>
-											<i class="icon-gplus"></i>
-										</a>
-									</div>
-								</div>
-
-							</div>
-
-						</div>
-
-					</div>
-				</div>
-
-				<!-- Document Wrapper
-				============================================= -->
-				<div id="wrapper" class="clearfix">
-					<!-- <section id="content">
-					<div class="content-wrap">
-
-						<div class="container">
-
-							<h2 class="text-center">写真</h2>
-							<div class="block-expand-categories flex-column flex-lg-row d-flex justify-content-center">
-								<div class="expand-category bg-light" style="background-image: url('images/blocks/preview/exp-cards/1.jpeg');">
-									<h4><a href="#" class="text-light">フェイスシールド</a></h4>
-								</div>
-
-								<div class="expand-category bg-light" style="background-image: url('images/blocks/preview/exp-cards/2.jpeg');">
-									<h4><a href="#" class="text-light">フェイスシールド</a></h4>
-								</div>
-
-								<div class="expand-category bg-light" style="background-image: url('images/blocks/preview/exp-cards/3.jpeg');">
-									<h4><a href="#" class="text-light">フェイスシールド</a></h4>
-								</div>
-
-								<div class="expand-category bg-light" style="background-image: url('images/blocks/preview/exp-cards/4.jpg');">
-									<h4><a href="#" class="text-light">Desserts</a></h4>
-								</div>
-
-								<div class="expand-category bg-light" style="background-image: url('images/blocks/preview/exp-cards/5.jpg');">
-									<h4><a href="#" class="text-light">Vegan</a></h4>
-								</div>
-
-								<div class="expand-category bg-light" style="background-image: url('images/blocks/preview/exp-cards/6.jpg');">
-									<h4><a href="#" class="text-light">Seafood</a></h4>
-								</div>
-
-								<div class="expand-category bg-light" style="background-image: url('images/blocks/preview/exp-cards/7.jpg');">
-									<h4><a href="#" class="text-light">Beverages</a></h4>
-								</div>
-							</div>
-
-							<div class="line"></div>
-						</div>
-
-					</div>
-				</section> -->
-				</div>
-				<div class="container clearfix">
-
-					<!-- <div id="oc-clients" class="owl-carousel image-carousel carousel-widget" data-margin="60" data-loop="true" data-nav="false" data-autoplay="5000" data-pagi="false" data-items-xs="2" data-items-sm="3" data-items-md="4" data-items-lg="5" data-items-xl="6">
-
-					<div class="oc-item"><a href="#"><img src="images/clients/1.png" alt="Clients"></a></div>
-					<div class="oc-item"><a href="#"><img src="images/clients/2.png" alt="Clients"></a></div>
-					<div class="oc-item"><a href="#"><img src="images/clients/3.png" alt="Clients"></a></div>
-					<div class="oc-item"><a href="#"><img src="images/clients/4.png" alt="Clients"></a></div>
-					<div class="oc-item"><a href="#"><img src="images/clients/5.png" alt="Clients"></a></div>
-					<div class="oc-item"><a href="#"><img src="images/clients/6.png" alt="Clients"></a></div>
-					<div class="oc-item"><a href="#"><img src="images/clients/7.png" alt="Clients"></a></div>
-					<div class="oc-item"><a href="#"><img src="images/clients/8.png" alt="Clients"></a></div>
-					<div class="oc-item"><a href="#"><img src="images/clients/9.png" alt="Clients"></a></div>
-					<div class="oc-item"><a href="#"><img src="images/clients/10.png" alt="Clients"></a></div>
-
-				</div> -->
-
 
 				</div>
+			</section> -->
 			</div>
+			<div class="container clearfix">
+
+				<!-- <div id="oc-clients" class="owl-carousel image-carousel carousel-widget" data-margin="60" data-loop="true" data-nav="false" data-autoplay="5000" data-pagi="false" data-items-xs="2" data-items-sm="3" data-items-md="4" data-items-lg="5" data-items-xl="6">
+
+				<div class="oc-item"><a href="#"><img src="images/clients/1.png" alt="Clients"></a></div>
+				<div class="oc-item"><a href="#"><img src="images/clients/2.png" alt="Clients"></a></div>
+				<div class="oc-item"><a href="#"><img src="images/clients/3.png" alt="Clients"></a></div>
+				<div class="oc-item"><a href="#"><img src="images/clients/4.png" alt="Clients"></a></div>
+				<div class="oc-item"><a href="#"><img src="images/clients/5.png" alt="Clients"></a></div>
+				<div class="oc-item"><a href="#"><img src="images/clients/6.png" alt="Clients"></a></div>
+				<div class="oc-item"><a href="#"><img src="images/clients/7.png" alt="Clients"></a></div>
+				<div class="oc-item"><a href="#"><img src="images/clients/8.png" alt="Clients"></a></div>
+				<div class="oc-item"><a href="#"><img src="images/clients/9.png" alt="Clients"></a></div>
+				<div class="oc-item"><a href="#"><img src="images/clients/10.png" alt="Clients"></a></div>
+
+			</div> -->
+
+
+			</div>
+		</div>
 		</section><!-- #content end -->
 
 		<!-- Footer
