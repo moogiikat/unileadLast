@@ -25,6 +25,12 @@
 	<link rel="stylesheet" href="demos/yoga/yoga.css" type="text/css" /> <!-- Yoga Theme Custom CSS -->
 	<!-- / -->
 
+	<!-- Hosting Demo Specific Stylesheet -->
+	<link rel="stylesheet" href="css/colors.php?color=44aaac" type="text/css" /> <!-- Theme Color -->
+	<link rel="stylesheet" href="demos/hosting/css/fonts.css" type="text/css" />
+	<link rel="stylesheet" href="demos/hosting/hosting.css" type="text/css" />
+	<!-- / -->
+
 	<link rel="stylesheet" href="css/custom.css" type="text/css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -275,17 +281,17 @@
 
 							<ul class="menu-container">
 								<li class="menu-item">
-									<a class="menu-link" href="/">
+									<a class="menu-link" href="/index.html">
 										<div>ホーム</div>
 									</a>
 								</li>
 								<li class="menu-item">
-									<a class="menu-link" href="#">
+									<a class="menu-link" href="#company-info">
 										<div>会社情報</div>
 									</a>
 								</li>
 								<li class="menu-item mega-menu">
-									<a class="menu-link" href="#">
+									<a class="menu-link" href="#our-work">
 										<div>事業内容</div>
 									</a>
 								</li>
@@ -380,8 +386,8 @@
 		<!-- Content
 		============================================= -->
 		<section id="content" class="bg-white">
-			<div class="content-wrap pt-0" style="overflow: visible">
-				<div class="position-relative">
+			<div class="content-wrap pt-0 pb-0" style="overflow: visible">
+				<div class="position-relative" id="company-info">
 					<div class="container">
 						<div class="row py-0 py-lg-5">
 							<div class="col-lg-5 py-5">
@@ -565,21 +571,6 @@
 											<p class="mb-3">
 												弊社の社名「UNILEAD」にはよりよい状態へユニバースをリードするという思いが込められています。再生可能エネルギーと建設業を主軸におき、先端技術を用いて環境問題や人手不足解消に貢献しています。</br>「地球温暖化に伴う食糧問題を食い止める再エネ、それを創る建設技術、おいしい食糧を生産する北海道の大地、そこで活躍する人々」これらは夢のある物語の舞台となると考えています。</br>私たちは人を大切にし、人を磨き、人が活躍するフィールドを作り、先端技術とともに進展していくことで私たちにしかできないこととその可能性を信じて前進してまいります。</br>そしてお客様の期待以上の仕事・サービスを提供できるよう日々の努力を重ね、成長していきます。
 											</p>
-											<a href="#"
-												class="social-icon inline-block si-small si-colored si-rounded si-facebook">
-												<i class="icon-facebook"></i>
-												<i class="icon-facebook"></i>
-											</a>
-											<a href="#"
-												class="social-icon inline-block si-small si-colored si-rounded si-twitter">
-												<i class="icon-twitter"></i>
-												<i class="icon-twitter"></i>
-											</a>
-											<a href="#"
-												class="social-icon inline-block si-small si-colored si-rounded si-gplus">
-												<i class="icon-gplus"></i>
-												<i class="icon-gplus"></i>
-											</a>
 										</div>
 									</div>
 								</div>
@@ -657,72 +648,98 @@
 				</section><!-- #content end -->
 			</div>
 
-			<div class="container clearfix">
+			<div class="section">
+				<div class="container">
 
-				<div class="row justify-content-center col-mb-50">
-					<h2 style="text-align: center;">事業内容</h2>
-					<div class="col-sm-6 col-lg-4">
-						<div class="feature-box media-box">
-							<div class="fbox-media">
-								<img src="images/unilead/DJI_0053.JPG" alt="Why choose Us?">
-							</div>
-							<div class="fbox-content px-0">
-								<h3>i-construction支援 3DCAD・BIM・CIM</h3>
-								<p>建設業の生産性を向上のため、起工測量、3次元テータ作成、ICT建機による施工、3次元出来形管理、3次元データ納品、CIM、空中写真撮影・動画作成のサービスを提供し、i-constuctionで現場を支援します。
-								</p>
+					<h2 style="text-align: center;" id="our-work">事業内容</h2>
+
+					<!-- Owl Carousel
+						============================================= -->
+					<div id="oc-testimonials"
+						class="owl-carousel center testimonials-carousel testimonial-full carousel-widget mt-5"
+						data-margin="0" data-items-xs="1" data-items-sm="1" data-items-md="1" data-items-lg="2"
+						data-items-xl="3" data-center="true" data-loop="true" data-autoplay="4000" data-speed="500">
+
+						<!-- Item 1 -->
+						<div class="oc-item">
+							<div>
+								<div class="feature-box media-box">
+									<div class="fbox-media">
+										<img src="images/unilead/DJI_0053.JPG" alt="Why choose Us?">
+									</div>
+									<div class="fbox-content px-0">
+										<h3>i-construction支援 3DCAD・BIM・CIM</h3>
+										<p>建設業の生産性を向上のため、起工測量、3次元テータ作成、ICT建機による施工、3次元出来形管理、3次元データ納品、CIM、空中写真撮影・動画作成のサービスを提供し、i-constuctionで現場を支援します。
+										</p>
+									</div>
+								</div>
 							</div>
 						</div>
-					</div>
 
-					<div class="col-sm-6 col-lg-4">
-						<div class="feature-box media-box">
-							<div class="fbox-media">
-								<img src="images/unilead/_VqCCbLE.jpeg" alt="Why choose Us?">
-							</div>
-							<div class="fbox-content px-0">
-								<h3>一般土木・建築工事請負事業.</h3>
-								<p>若手人材でお客様の建設現場を応援します。コンクリート基礎、型枠、鉄筋、小規模土木工事を請け負います。</p>
+						<!-- Item 2 -->
+						<div class="oc-item">
+							<div>
+								<div class="feature-box media-box">
+									<div class="fbox-media">
+										<img src="images/unilead/_VqCCbLE.jpeg" alt="Why choose Us?">
+									</div>
+									<div class="fbox-content px-0">
+										<h3>一般土木・建築工事請負事業.</h3>
+										<p>若手人材でお客様の建設現場を応援します。コンクリート基礎、型枠、鉄筋、小規模土木工事を請け負います。</p>
+									</div>
+								</div>
 							</div>
 						</div>
-					</div>
 
-					<div class="col-sm-6 col-lg-4">
-						<div class="feature-box media-box">
-							<div class="fbox-media">
-								<img src="images/unilead/DJI_0064.JPG" alt="Why choose Us?">
-							</div>
-							<div class="fbox-content px-0">
-								<h3>再生可能エネルギー事業</h3>
-								<p>太陽光発電所設計・施工・メンテナンスを一式請け負います。今までの経験と実績を活かし、高い品質の発電所を短期間で施工することでお客様のニーズにお応えします。</p>
+						<!-- Item 3 -->
+						<div class="oc-item">
+							<div>
+								<div class="feature-box media-box">
+									<div class="fbox-media">
+										<img src="images/unilead/DJI_0064.JPG" alt="Why choose Us?">
+									</div>
+									<div class="fbox-content px-0">
+										<h3>再生可能エネルギー事業</h3>
+										<p>太陽光発電所設計・施工・メンテナンスを一式請け負います。今までの経験と実績を活かし、高い品質の発電所を短期間で施工することでお客様のニーズにお応えします。
+										</p>
+									</div>
+								</div>
 							</div>
 						</div>
-					</div>
 
-					<div class="col-sm-6 col-lg-4">
-						<div class="feature-box media-box">
-							<div class="fbox-media">
-								<img src="images/unilead/tokuteiginou.jpg" alt="Why choose Us?">
-							</div>
-							<div class="fbox-content px-0">
-								<h3>特定技能者支援業務</h3>
-								<p>初めて来日する人でも安心して仕事を続けられるように支援し、お客様の雇用の維持・拡大を努めます。優秀なモンゴル人材を紹介し、就労ビザ取得支援をおこないます。</p>
+						<!-- Item 4 -->
+						<div class="oc-item">
+							<div>
+								<div class="feature-box media-box">
+									<div class="fbox-media">
+										<img src="images/unilead/tokuteiginou.jpg" alt="Why choose Us?">
+									</div>
+									<div class="fbox-content px-0">
+										<h3>特定技能者支援業務</h3>
+										<p>初めて来日する人でも安心して仕事を続けられるように支援し、お客様の雇用の維持・拡大を努めます。優秀なモンゴル人材を紹介し、就労ビザ取得支援をおこないます。
+										</p>
+									</div>
+								</div>
 							</div>
 						</div>
-					</div>
 
-					<div class="col-sm-6 col-lg-4">
-						<div class="feature-box media-box">
-							<div class="fbox-media">
-								<img src="images/unilead/w8FlxEIc.jpeg" alt="Why choose Us?">
-							</div>
-							<div class="fbox-content px-0">
-								<h3>貿易（販売及び輸出入）</h3>
-								<p>フェイスガードを製造、販売した経験に基づき、将来衣料品、日用雑貨、食料品の販売及び輸出入に向けて調査中です。</p>
+						<!-- Item 5 -->
+						<div class="oc-item">
+							<div>
+								<div class="feature-box media-box">
+									<div class="fbox-media">
+										<img src="images/unilead/w8FlxEIc.jpeg" alt="Why choose Us?">
+									</div>
+									<div class="fbox-content px-0">
+										<h3>貿易（販売及び輸出入）</h3>
+										<p>フェイスガードを製造、販売した経験に基づき、将来衣料品、日用雑貨、食料品の販売及び輸出入に向けて調査中です。</p>
+									</div>
+								</div>
 							</div>
 						</div>
+
 					</div>
 				</div>
-
 			</div>
 
 			<div class="section m-0" style="padding-top: 0px !important;">
